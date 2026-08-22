@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ullbergm/nc-cdl-test-training/compare/v1.9.1...v2.0.0) (2026-08-22)
+
+
+### Features
+
+* adopt the shared trainer engine ([5a64b7b](https://github.com/ullbergm/nc-cdl-test-training/commit/5a64b7b2800bc9446fb6a5f047fc73abf0302f9b))
+
+
+### Miscellaneous Chores
+
+* align every trainer on version 2.0.0 ([07ac8a9](https://github.com/ullbergm/nc-cdl-test-training/commit/07ac8a92ae36d4848a17d99bb2f3b70a143b2eba))
+
 ## [1.9.1](https://github.com/ullbergm/nc-cdl-test-training/compare/v1.9.0...v1.9.1) (2026-08-16)
 
 
