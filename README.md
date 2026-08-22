@@ -1,8 +1,8 @@
 # NC CDL Trainer
 
-[![CI](https://github.com/ullbergm/nc-cdl-test-training/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/nc-cdl-test-training/actions/workflows/ci.yml)
-[![Latest release](https://img.shields.io/github/v/release/ullbergm/nc-cdl-test-training)](https://github.com/ullbergm/nc-cdl-test-training/releases)
-[![License: MIT](https://img.shields.io/github/license/ullbergm/nc-cdl-test-training)](LICENSE)
+[![CI](https://github.com/ullbergm/nc-cdl-trainer/actions/workflows/ci.yml/badge.svg)](https://github.com/ullbergm/nc-cdl-trainer/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/ullbergm/nc-cdl-trainer)](https://github.com/ullbergm/nc-cdl-trainer/releases)
+[![License: MIT](https://img.shields.io/github/license/ullbergm/nc-cdl-trainer)](LICENSE)
 [![Live site](https://img.shields.io/website?url=https%3A%2F%2Fnc-cdl.ullberg.io&label=nc-cdl.ullberg.io)](https://nc-cdl.ullberg.io)
 
 [![Questions](https://img.shields.io/badge/questions-422-blue)](data/questions.js)

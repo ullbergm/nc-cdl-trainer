@@ -9,7 +9,7 @@ const EXAM_CONFIG = {
   storageKey: 'nc-cdl-trainer-v1',      // localStorage; changing it orphans saved progress
   sessionKey: 'nc-cdl-trainer-session', // sessionStorage mirror of the active session
   exportPrefix: 'cdl-progress',         // backup filename: <prefix>-YYYY-MM-DD.json
-  repo: 'https://github.com/ullbergm/nc-cdl-test-training',
+  repo: 'https://github.com/ullbergm/nc-cdl-trainer',
   passMark: 0.8, // NC requires 80% on every CDL knowledge test
 
   // Section numbers are the manual's own section numbering, shared across the
