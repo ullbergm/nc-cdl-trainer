@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.0.1](https://github.com/ullbergm/nc-cdl-test-training/compare/v2.0.0...v2.0.1) (2026-08-22)
+
+
+### Bug Fixes
+
+* **engine:** give the engine its own dependency install ([1445526](https://github.com/ullbergm/nc-cdl-test-training/commit/14455269d92706d48b356f9d2bb6accc85f05b51))
+* **engine:** move workflows off the deprecated node 20 action runtimes ([1445526](https://github.com/ullbergm/nc-cdl-test-training/commit/14455269d92706d48b356f9d2bb6accc85f05b51))
+* sync trainer-engine v2.0.1 ([1445526](https://github.com/ullbergm/nc-cdl-test-training/commit/14455269d92706d48b356f9d2bb6accc85f05b51))
+
 ## [2.0.0](https://github.com/ullbergm/nc-cdl-test-training/compare/v1.9.1...v2.0.0) (2026-08-22)
 
 
