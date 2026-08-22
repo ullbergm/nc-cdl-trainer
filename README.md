@@ -131,7 +131,8 @@ report.
 
 ```
 index.html               app shell
-css/style.css            styling (light/dark follows the device; Settings can force either)
+css/engine.css           structural styling, synced from the trainer-engine repo
+css/app.css              this app's color tokens (light/dark follows the device; Settings can force either)
 js/fsrs.js               FSRS-6 scheduler
 js/readiness.js          projected score and pass odds per test
 js/storage.js            localStorage persistence, export/import
@@ -174,8 +175,9 @@ new repository from this one and touch:
 - `data/manual-pages.js`: regenerate with `node tools/gen-manual-pages.js`; the
   footer-label parsing in that script is written for the CDL manual, so adjust
   it to the new manual's page numbering
-- `css/style.css`: the token blocks at the top set all colors and the
-  progress-bar texture; the rules below them are exam-neutral
+- `css/app.css`: the token blocks set all colors and the progress-bar
+  texture; everything structural lives in `css/engine.css`, which is synced
+  from the [trainer-engine](https://github.com/ullbergm/trainer-engine) repo
 - `index.html`: title, meta description, canonical URL, brand text, favicon,
   theme color
 - `manifest.webmanifest`, `icons/`, `CNAME`: PWA identity and hosting; redraw
