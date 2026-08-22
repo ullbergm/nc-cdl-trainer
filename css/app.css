@@ -1,0 +1,79 @@
+/* "Highway" theme: interstate guide-sign green, signage yellow, asphalt
+   neutrals. All the exam flavor lives in the token blocks below, including
+   the --track-texture lane line on the progress bar; retheme a fork by
+   editing the tokens, nothing structural.
+   Light/dark follows prefers-color-scheme unless the Settings theme override
+   sets data-theme="light"/"dark" on <html>. The dark token block therefore
+   appears twice: once for system-dark (unless overridden to light), once for
+   the explicit dark override. Keep the two copies identical. */
+:root {
+  --bg: #f2f1ea;
+  --card: #ffffff;
+  --text: #1c2620;
+  --muted: #5f6f64;
+  --accent: #10684a;
+  --accent-hi: #0c503a;
+  --accent-text: #ffffff;
+  --nav-bg: #10684a;
+  --nav-text: #eaf4ee;
+  --accent2: #f3c623;
+  --accent2-text: #241d04;
+  --border: #d9dbd0;
+  --ok: #10684a;
+  --ok-bg: #e4f1e8;
+  --bad: #b23a2a;
+  --bad-bg: #f7e9e4;
+  --warn: #b45309;
+  --surface-dark: #33352f;
+  --shadow: 0 1px 2px rgba(20, 30, 24, 0.07), 0 4px 16px rgba(20, 30, 24, 0.05);
+  /* Dashed lane line drawn across the progress track. References --accent2,
+     so it follows the dark palette on its own; set to `none` for a plain
+     track. Defined once here since both dark blocks would keep it as is. */
+  --track-texture: repeating-linear-gradient(90deg,
+    transparent 0 14px, var(--accent2) 14px 26px, transparent 26px 40px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131614;
+    --card: #1c211d;
+    --text: #e8ece7;
+    --muted: #98a89b;
+    --accent: #37b184;
+    --accent-hi: #47c795;
+    --accent-text: #07130c;
+    --nav-bg: #0d3d2b;
+    --nav-text: #dcefe3;
+    --accent2: #eec93f;
+    --accent2-text: #201a05;
+    --border: #2c332c;
+    --ok: #4ecb87;
+    --ok-bg: #16301f;
+    --bad: #f0836c;
+    --bad-bg: #38211b;
+    --warn: #e5a44e;
+    --surface-dark: #0e100e;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131614;
+  --card: #1c211d;
+  --text: #e8ece7;
+  --muted: #98a89b;
+  --accent: #37b184;
+  --accent-hi: #47c795;
+  --accent-text: #07130c;
+  --nav-bg: #0d3d2b;
+  --nav-text: #dcefe3;
+  --accent2: #eec93f;
+  --accent2-text: #201a05;
+  --border: #2c332c;
+  --ok: #4ecb87;
+  --ok-bg: #16301f;
+  --bad: #f0836c;
+  --bad-bg: #38211b;
+  --warn: #e5a44e;
+  --surface-dark: #0e100e;
+  --shadow: none;
+}
+

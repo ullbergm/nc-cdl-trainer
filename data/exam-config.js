@@ -12,6 +12,11 @@ const EXAM_CONFIG = {
   repo: 'https://github.com/ullbergm/nc-cdl-test-training',
   passMark: 0.8, // NC requires 80% on every CDL knowledge test
 
+  // Section numbers are the manual's own section numbering, shared across the
+  // whole bank; sections read as "§ N" in the UI.
+  flatSections: true,
+  sectionWord: '§',
+
   // Manuals the questions cite. A question picks one with its `manual` field
   // and uses `default` when it has none. `pages` maps the manual's printed
   // page labels to physical PDF pages for #page= deep links. Leave `url` out
