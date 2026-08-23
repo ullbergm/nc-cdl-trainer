@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.0.1...v2.1.0) (2026-08-23)
+
+
+### Features
+
+* drive a rig along the progress bar's lane line ([f037583](https://github.com/ullbergm/nc-cdl-trainer/commit/f037583301949672780cbbaed55d286f0d7079f8))
+* **engine:** add track-marker tokens for themed progress bars ([d35fc84](https://github.com/ullbergm/nc-cdl-trainer/commit/d35fc841ed4a8dcd360392c3083ba448015b5886))
+
+
+### Bug Fixes
+
+* sync trainer-engine v2.1.0 ([d35fc84](https://github.com/ullbergm/nc-cdl-trainer/commit/d35fc841ed4a8dcd360392c3083ba448015b5886))
+
 ## [2.0.1](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.0.0...v2.0.1) (2026-08-22)
 
 
