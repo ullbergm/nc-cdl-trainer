@@ -1,7 +1,7 @@
 /* "Highway" theme: interstate guide-sign green, signage yellow, asphalt
    neutrals. All the exam flavor lives in the token blocks below, including
-   the --track-texture lane line on the progress bar; retheme a fork by
-   editing the tokens, nothing structural.
+   the --track-texture lane line and the --track-marker rig on the progress
+   bar; retheme a fork by editing the tokens, nothing structural.
    Light/dark follows prefers-color-scheme unless the Settings theme override
    sets data-theme="light"/"dark" on <html>. The dark token block therefore
    appears twice: once for system-dark (unless overridden to light), once for
@@ -31,6 +31,14 @@
      track. Defined once here since both dark blocks would keep it as is. */
   --track-texture: repeating-linear-gradient(90deg,
     transparent 0 14px, var(--accent2) 14px 26px, transparent 26px 40px);
+  /* Rig driving the lane line at the leading edge of the progress fill,
+     mirrored so it faces the finish (the emoji artwork faces left) and
+     lifted off the glyph baseline to sit centered on the track. An emoji
+     needs no palette-specific copies, so it is defined once here. */
+  --track-marker: "🚛";
+  --track-marker-adjust: scaleX(-1) translateY(-2px);
+  /* Keeps the 15px marker and its 3px gap inside the layout at 100%. */
+  --track-marker-clearance: 18px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
