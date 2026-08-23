@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.2](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.1.1...v2.1.2) (2026-08-23)
+
+
+### Bug Fixes
+
+* **engine:** name the platform emoji fonts for emoji track markers ([1d59217](https://github.com/ullbergm/nc-cdl-trainer/commit/1d59217776d50e40aac498ee647f5b8cd57efbb1))
+* sync trainer-engine v2.1.1 ([1d59217](https://github.com/ullbergm/nc-cdl-trainer/commit/1d59217776d50e40aac498ee647f5b8cd57efbb1))
+
 ## [2.1.1](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.1.0...v2.1.1) (2026-08-23)
 
 
