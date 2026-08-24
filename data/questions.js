@@ -4684,6 +4684,10 @@ const QUESTION_BANK = [
   ],
   "answer": 2,
   "explanation": "Table 1 materials (such as 1.1 mass explosives, 2.3 poison gas, and 4.3 dangerous when wet) must be placarded whenever any amount is transported.",
+  "image": {
+   "src": "data/img/placard-table-1.png",
+   "alt": "Placard Table 1, headed Any Amount: 1.1 mass explosives, 1.2 project hazards, 1.3 mass fire hazards, 2.3 poisonous/toxic gases, 4.3 dangerous when wet, 5.2 temperature-controlled organic peroxide, 6.1 inhalation hazard zone A and B, and 7 radioactive yellow III label, each placarded by its hazard name."
+  },
   "page": "9-9"
  },
  {
@@ -4699,6 +4703,10 @@ const QUESTION_BANK = [
   ],
   "answer": 0,
   "explanation": "Table 2 hazard classes need placards only if the total amount transported is 1,001 pounds or more including the package; you add the amounts from all shipping papers for all Table 2 products on board.",
+  "image": {
+   "src": "data/img/placard-table-2.png",
+   "alt": "Placard Table 2, headed 1,001 Pounds Or More: 1.4 to 1.6 explosives, 2.1 flammable and 2.2 non-flammable gases, 3 flammable liquids, combustible liquids, 4.1 flammable solids, 4.2 spontaneously combustible, 5.1 oxidizers, 5.2 other organic peroxides, 6.1 non-inhalation poisons, 6.2 infectious substances, 8 corrosives, 9 miscellaneous, and ORM-D, each with its placard name. FLAMMABLE may replace COMBUSTIBLE on a cargo or portable tank; a Class 9 placard is not required for domestic transportation."
+  },
   "page": "9-9"
  },
  {
