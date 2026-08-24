@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.2.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.1.2...v2.2.0) (2026-08-24)
+
+
+### Features
+
+* **engine:** catch near-duplicate question stems in bank validation ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+* **engine:** double the progress track height to 20px ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+* **engine:** show an optional illustration with a question ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+* **engine:** support true/false questions ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+* illustrate the placard-table questions with the manual's tables ([ade1e33](https://github.com/ullbergm/nc-cdl-trainer/commit/ade1e333378ee08c7a2b13dc3505c96ac984a0cd))
+* paint the progress-bar rig white ([f1fd1e9](https://github.com/ullbergm/nc-cdl-trainer/commit/f1fd1e9faafc36249e7f14cef59a34b73d87a483))
+
+
+### Bug Fixes
+
+* **engine:** tolerate leaving About before the changelog fetch settles ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+* sync trainer-engine v2.2.0 ([ff4f968](https://github.com/ullbergm/nc-cdl-trainer/commit/ff4f968bfaf5d91da47e1ac2b26b260ddfa30458))
+
 ## [2.1.2](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.1.1...v2.1.2) (2026-08-23)
 
 
