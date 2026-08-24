@@ -3,4 +3,6 @@
    exist in the deploy (tests/validate-bank.js enforces it). */
 const APP_ASSETS = [
   'data/manual-pages.js',
+  'data/img/placard-table-1.png',
+  'data/img/placard-table-2.png',
 ];

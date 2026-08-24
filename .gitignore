@@ -6,3 +6,9 @@ node_modules/
 
 # throwaway copy of index.html left behind if generate.sh is interrupted
 .screenshot-page.html
+
+# build/test artifacts
+dist/
+test-results/
+.lighthouseci/
+coverage/

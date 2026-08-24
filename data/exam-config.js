@@ -17,6 +17,13 @@ const EXAM_CONFIG = {
   flatSections: true,
   sectionWord: '§',
 
+  // Pairs the validator's near-duplicate check flagged and a human reviewed:
+  // both questions belong. s2-002 asks the front-tire tread minimum alone;
+  // s2-051 asks front and other tires together, contrasting 4/32" with 2/32".
+  allowSimilarQuestions: [
+    ['s2-002', 's2-051'],
+  ],
+
   // Manuals the questions cite. A question picks one with its `manual` field
   // and uses `default` when it has none. `pages` maps the manual's printed
   // page labels to physical PDF pages for #page= deep links. Leave `url` out
