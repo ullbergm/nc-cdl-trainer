@@ -71,6 +71,10 @@ const EXAM_CONFIG = {
 
   // Knowledge tests / endorsements -> the manual sections that cover them.
   // The Settings picker offers these, grouped by testGroups.
+  // A fresh install starts studying the three tests of a first Class A
+  // attempt rather than the whole bank; the picker still offers everything,
+  // and anyone with saved progress keeps their own selection.
+  defaultTests: ['gk', 'air', 'comb'],
   tests: [
     { key: 'gk', group: 'core', name: 'General Knowledge', note: 'required for every CDL', sections: [1, 2, 3] },
     { key: 'air', group: 'core', name: 'Air Brakes', note: 'skip it and your license gets an air-brake restriction', sections: [5] },
