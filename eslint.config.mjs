@@ -9,13 +9,13 @@ export default [
     // global each (QUESTION_BANK, FSRS, Store), consumed by js/app.js;
     // storage.js reads its localStorage key out of EXAM_CONFIG.
     files: ['js/fsrs.js', 'js/storage.js', 'data/questions.js', 'data/manual-pages.js',
-      'data/app-assets.js'],
+      'data/evo-pages.js', 'data/app-assets.js'],
     languageOptions: {
       sourceType: 'script',
       globals: { ...globals.browser, EXAM_CONFIG: 'readonly' },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^(FSRS|Store|QUESTION_BANK|MANUAL_PAGES|APP_ASSETS)$' }],
+      'no-unused-vars': ['error', { varsIgnorePattern: '^(FSRS|Store|QUESTION_BANK|MANUAL_PAGES|EVO_PAGES|APP_ASSETS)$' }],
     },
   },
   {
@@ -31,11 +31,11 @@ export default [
     },
   },
   {
-    // The exam config loads after the two data files and may read both.
+    // The exam config loads after the data files and may read them all.
     files: ['data/exam-config.js'],
     languageOptions: {
       sourceType: 'script',
-      globals: { ...globals.browser, QUESTION_BANK: 'readonly', MANUAL_PAGES: 'readonly' },
+      globals: { ...globals.browser, QUESTION_BANK: 'readonly', MANUAL_PAGES: 'readonly', EVO_PAGES: 'readonly' },
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^EXAM_CONFIG$' }],

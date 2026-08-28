@@ -12,9 +12,11 @@ const EXAM_CONFIG = {
   repo: 'https://github.com/ullbergm/nc-cdl-trainer',
   passMark: 0.8, // NC requires 80% on every CDL knowledge test
 
-  // Section numbers are the manual's own section numbering, shared across the
-  // whole bank; sections read as "§ N" in the UI.
-  flatSections: true,
+  // Sections read as "§ N" in the UI. The bank spans two books — the CDL
+  // manual and the EVO handbook — each numbering its sections from 1, so a
+  // section is keyed (manual, number): "default:2" is the CDL manual's § 2
+  // and "evo:2" the EVO handbook's § 2. A question's `manual` field says
+  // which book it belongs to (`default` when it has none).
   sectionWord: '§',
 
   // Pairs the validator's near-duplicate check flagged and a human reviewed:
@@ -35,9 +37,19 @@ const EXAM_CONFIG = {
   manuals: {
     default: {
       title: 'NC Commercial Driver Manual',
+      short: 'CDL',   // prefix on section labels where the book must be named
       cite: 'Manual', // prefix on the "p. 2-15" citation
       url: 'https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf',
       pages: MANUAL_PAGES,
+    },
+    // The escort vehicle operator certification is NCDOT's, not the DMV's,
+    // but it lives in this trainer because the same drivers sit both.
+    evo: {
+      title: 'NCDOT Escort Vehicle Operator Handbook',
+      short: 'EVO',
+      cite: 'EVO Handbook',
+      url: 'https://connect.ncdot.gov/business/trucking/OversizeOverweight%20Permit%20Documents/2017%20EVO%20Handbook.pdf',
+      pages: EVO_PAGES,
     },
   },
 
@@ -52,10 +64,17 @@ const EXAM_CONFIG = {
     { key: 'hazmat', name: 'Hazardous Materials', sections: [9], count: 30 },
     { key: 'bus', name: 'School Bus', sections: [10], count: 20 },
     { key: 'skills', name: 'Skills Test Review', sections: [11, 12, 13], count: 25 },
+    // The real EVO exam is graded at 75%; the trainer keeps its global 80%
+    // readiness bar, which only errs on the safe side.
+    { key: 'evo', name: 'Escort Vehicle Operator', sections: ['evo:1', 'evo:2', 'evo:3', 'evo:4', 'evo:5'], count: 25 },
   ],
 
   // Knowledge tests / endorsements -> the manual sections that cover them.
   // The Settings picker offers these, grouped by testGroups.
+  // A fresh install starts studying the three tests of a first Class A
+  // attempt rather than the whole bank; the picker still offers everything,
+  // and anyone with saved progress keeps their own selection.
+  defaultTests: ['gk', 'air', 'comb'],
   tests: [
     { key: 'gk', group: 'core', name: 'General Knowledge', note: 'required for every CDL', sections: [1, 2, 3] },
     { key: 'air', group: 'core', name: 'Air Brakes', note: 'skip it and your license gets an air-brake restriction', sections: [5] },
@@ -66,31 +85,40 @@ const EXAM_CONFIG = {
     { key: 'hazmat', group: 'endorse', name: 'Hazardous Materials (H)', note: '', sections: [9] },
     { key: 'bus', group: 'endorse', name: 'School Bus (S)', note: '', sections: [10] },
     { key: 'skills', group: 'skills', name: 'Skills / road test prep', note: 'pre-trip inspection, control skills, road test', sections: [11, 12, 13] },
+    { key: 'evo', group: 'evo', name: 'Escort Vehicle Operator', note: 'NCDOT certification, not a DMV test — 75% to pass', sections: ['evo:1', 'evo:2', 'evo:3', 'evo:4', 'evo:5'] },
   ],
   testGroups: [
     ['core', 'Knowledge tests'],
     ['endorse', 'Endorsements'],
     ['skills', 'Skills / road test'],
+    ['evo', 'Escort vehicle certification'],
   ],
 
   // Prose that names the exam, injected as HTML into the matching views.
-  homeSubtitle: `${QUESTION_BANK.length} questions from the NC Commercial Driver Manual`,
+  homeSubtitle: `${QUESTION_BANK.length} questions from the NC Commercial Driver Manual and the NCDOT EVO Handbook`,
   disclaimerHTML: `Questions were extracted from the
     <a href="https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf"
-       target="_blank" rel="noopener">NC Commercial Driver Manual</a>;
+       target="_blank" rel="noopener">NC Commercial Driver Manual</a> and the
+    <a href="https://connect.ncdot.gov/business/trucking/OversizeOverweight%20Permit%20Documents/2017%20EVO%20Handbook.pdf"
+       target="_blank" rel="noopener">NCDOT Escort Vehicle Operator Handbook</a>;
     accuracy is not guaranteed. Each question links to its manual page, so verify
-    anything important against the source. The actual DMV test questions are not public, and no
+    anything important against the source. The actual test questions are not public, and no
     claim is made that these match or resemble them. All progress is stored locally in
     your browser and never sent to a server.`,
   aboutIntroHTML: `<p>NC CDL Trainer is a free, open-source study tool for the North Carolina CDL
-    knowledge tests. Its ${QUESTION_BANK.length} questions were written from the
+    knowledge tests and the NCDOT escort vehicle operator certification. Its
+    ${QUESTION_BANK.length} questions were written from the
     <a href="https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf"
        target="_blank" rel="noopener">NC Commercial Driver
-    Manual</a>, and every question cites the manual page it came from. The
+    Manual</a> and the
+    <a href="https://connect.ncdot.gov/business/trucking/OversizeOverweight%20Permit%20Documents/2017%20EVO%20Handbook.pdf"
+       target="_blank" rel="noopener">NCDOT Escort Vehicle Operator
+    Handbook</a>, and every question cites the page it came from. The
     citation is a link, so it opens the PDF at that page and you can check
     anything important against the source.</p>`,
-  aboutCaveatHTML: `<p>Questions were extracted from the manual by a language model and reviewed for
+  aboutCaveatHTML: `<p>Questions were extracted from the manuals by a language model and reviewed for
     accuracy, but mistakes are possible and accuracy is not guaranteed. The actual
-    DMV test questions are not public, and no claim is made that these match or
-    resemble them.</p>`,
+    test questions are not public, and no claim is made that these match or
+    resemble them. The escort vehicle operator exam is given at the NCDOT
+    certification workshop, not at the DMV.</p>`,
 };
