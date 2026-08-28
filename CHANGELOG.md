@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.3.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.2.0...v2.3.0) (2026-08-28)
+
+
+### Features
+
+* add the NCDOT escort vehicle operator test ([6e67c6c](https://github.com/ullbergm/nc-cdl-trainer/commit/6e67c6cbac823766298f4c8b613d2f0352ffda2b))
+* start a fresh install on the first Class A tests ([af157c3](https://github.com/ullbergm/nc-cdl-trainer/commit/af157c31750065e818023186e2b6ccf14d131204))
+
 ## [2.2.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.1.2...v2.2.0) (2026-08-24)
 
 
