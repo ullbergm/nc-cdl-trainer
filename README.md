@@ -5,15 +5,17 @@
 [![License: MIT](https://img.shields.io/github/license/ullbergm/nc-cdl-trainer)](LICENSE)
 [![Live site](https://img.shields.io/website?url=https%3A%2F%2Fnc-cdl.ullberg.io&label=nc-cdl.ullberg.io)](https://nc-cdl.ullberg.io)
 
-[![Questions](https://img.shields.io/badge/questions-422-blue)](data/questions.js)
+[![Questions](https://img.shields.io/badge/questions-562-blue)](data/questions.js)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-blue)](package.json)
 [![PWA](https://img.shields.io/badge/PWA-offline%20ready-blue)](manifest.webmanifest)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-blue)](CONTRIBUTING.md)
 [![Conventional Commits](https://img.shields.io/badge/conventional%20commits-1.0.0-blue)](https://www.conventionalcommits.org/en/v1.0.0/)
 
 Practice questions with spaced repetition for the North Carolina commercial driver
-license knowledge tests. The bank has 422 multiple-choice questions covering all 13
-sections of the [NC Commercial Driver Manual](https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf),
+license knowledge tests and the NCDOT escort vehicle operator certification. The
+bank has 562 multiple-choice questions covering all 13 sections of the
+[NC Commercial Driver Manual](https://www.ncdot.gov/dmv/license-id/driver-licenses/new-drivers/Documents/commercial-driver-manual.pdf)
+and all 5 chapters of the [NCDOT Escort Vehicle Operator Handbook](https://connect.ncdot.gov/business/trucking/OversizeOverweight%20Permit%20Documents/2017%20EVO%20Handbook.pdf),
 and every question cites the manual page it was drawn from, as a link that opens the
 PDF at that page.
 
@@ -137,7 +139,7 @@ js/fsrs.js               FSRS-6 scheduler
 js/readiness.js          projected score and pass odds per test
 js/storage.js            localStorage persistence, export/import
 js/app.js                UI and session logic
-data/questions.js        question bank (422 questions, tagged by section and manual page)
+data/questions.js        question bank (562 questions, tagged by section and manual page)
 data/manual-pages.js     manual page labels to PDF page numbers, for the citation links
 data/exam-config.js      what exam this is: tests, pass mark, manual links, exam-specific prose
 tools/                   regenerates that map from a local copy of the manual PDF, and the icons

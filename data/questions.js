@@ -2,7 +2,10 @@
    Each question cites the manual page it was drawn from. That printed label is
    turned into a PDF deep link through data/manual-pages.js; the few questions
    whose label is printed on more than one PDF page carry a pdfPage of their
-   own to point at the right one. */
+   own to point at the right one.
+   Questions carrying manual: "evo" were drawn from the NCDOT Certified Escort
+   Vehicle Operator Handbook (May 2017) instead, and link into it through
+   data/evo-pages.js the same way. */
 const QUESTION_BANK = [
  {
   "id": "s1-001",
@@ -6343,5 +6346,2341 @@ const QUESTION_BANK = [
   "answer": 1,
   "explanation": "Under lane usage scoring, you must complete a turn in the proper lane: a left turn should finish in the lane directly to the right of the center line, while a right turn should finish in the right-most (curb) lane.",
   "page": "13-4"
+ },
+ {
+  "id": "e1-001",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Above all else, an escort vehicle operator must remember that:",
+  "choices": [
+   "Keeping the permitted load on schedule is the escort team's first responsibility",
+   "The safety of the operator, the crew, and the motoring public outweighs any transporting operation",
+   "Preventing damage to the load takes priority over the flow of normal traffic",
+   "The permit route may be adjusted by the escort team whenever doing so saves meaningful time"
+  ],
+  "answer": 1,
+  "explanation": "The handbook's overriding principle is that your safety, the safety of your crew, and the safety of the motoring public are more important than any transporting operation being performed.",
+  "page": "1-1"
+ },
+ {
+  "id": "e1-002",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The program that certifies oversize-overweight load escort drivers in North Carolina is administered by:",
+  "choices": [
+   "The NC Division of Motor Vehicles",
+   "The NC State Highway Patrol",
+   "The NC Department of Transportation",
+   "The NC Community College System"
+  ],
+  "answer": 2,
+  "explanation": "NCDOT administers the escort driver certification program, as required by G.S. 20-119 and detailed in 19A NCAC 02D.0644. The community college system conducts the workshop, but certification comes from NCDOT's Oversize/Overweight Permit Unit.",
+  "page": "1-1"
+ },
+ {
+  "id": "e1-003",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Without a commercial driver license, the minimum age to qualify for NC escort driver certification is:",
+  "choices": [
+   "18 years",
+   "19 years",
+   "21 years",
+   "25 years"
+  ],
+  "answer": 2,
+  "explanation": "An applicant must be at least 21 years of age, or at least 18 with a Class A commercial driver license. Drivers certified by another state's approved program and NC law enforcement officers also qualify.",
+  "page": "1-1"
+ },
+ {
+  "id": "e1-004",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "To be certified, an escort driver's record must be free of convictions in the previous 12 months for:",
+  "choices": [
+   "Driving while impaired or reckless driving",
+   "Any moving violation of any kind",
+   "Speeding more than 15 mph over the limit",
+   "Following too closely or improper passing"
+  ],
+  "answer": 0,
+  "explanation": "The applicant must hold a valid driver license with no restrictions other than corrective lenses, and must have no conviction for driving while impaired or reckless driving in the previous 12 months.",
+  "page": "1-1"
+ },
+ {
+  "id": "e1-005",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "To earn NC escort certification, the exam at the end of the training workshop requires a minimum score of:",
+  "choices": [
+   "70 percent",
+   "75 percent",
+   "80 percent",
+   "85 percent"
+  ],
+  "answer": 1,
+  "explanation": "Certification requires successfully completing the NCDOT oversize-overweight escort vehicle operator course with a certification exam score of at least 75 percent, followed by certification from the Department.",
+  "page": "1-1"
+ },
+ {
+  "id": "e1-006",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Which of the following will cause an escort driver certification to be revoked?",
+  "choices": [
+   "A conviction for reckless driving",
+   "A single speeding citation",
+   "Working for more than one escort company",
+   "Escorting a load certified in another state"
+  ],
+  "answer": 0,
+  "explanation": "Certification is revoked for failing to keep a valid license (with no restriction other than corrective lenses), a conviction for driving while impaired, a conviction for reckless driving, or evidence of unsatisfactory performance on escort duty. After revocation, the driver must reapply, meet the prerequisites, and requalify through the training program.",
+  "page": "1-2"
+ },
+ {
+  "id": "e1-007",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "An operator whose certification is revoked may appeal in writing to the Secretary of Transportation within:",
+  "choices": [
+   "15 days of notification",
+   "10 days of notification",
+   "21 days of notification",
+   "30 days of notification"
+  ],
+  "answer": 0,
+  "explanation": "A written appeal must reach the Secretary of Transportation within 15 days of notification of the revocation. The Secretary may set aside or affirm the loss, and the driver is advised of the final disposition within 21 days after the appeal is received.",
+  "page": "1-2"
+ },
+ {
+  "id": "e1-008",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The one-day escort operator training and testing workshop is conducted by:",
+  "choices": [
+   "The North Carolina Community College System",
+   "The NCDOT Oversize/Overweight Permit Unit",
+   "The NC State Highway Patrol training academy",
+   "Private driving schools licensed by the DMV"
+  ],
+  "answer": 0,
+  "explanation": "The North Carolina Community College System conducts the one-day training and testing workshop, offered periodically at locations throughout the state. It covers escort driver requirements, skills training, testing, and defensive driving.",
+  "page": "1-2"
+ },
+ {
+  "id": "e1-009",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Once all program requirements are met, the Permit Unit mails the certification within:",
+  "choices": [
+   "Five business days",
+   "Ten business days",
+   "Fifteen business days",
+   "Thirty business days"
+  ],
+  "answer": 1,
+  "explanation": "The workshop instructor grades the test and reports scores to the Permit Unit, and the applicant submits a copy of their certified driving record. Once all requirements are met, the certification is mailed within ten business days.",
+  "page": "1-3"
+ },
+ {
+  "id": "e1-010",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "An NC escort driver certificate is valid for:",
+  "choices": [
+   "Two years from the date of issue",
+   "Four years from the date of issue",
+   "Five years from the date of issue",
+   "As long as the operator's driver license stays valid"
+  ],
+  "answer": 1,
+  "explanation": "Certificates are valid for four years from the date of issue. To renew, contact the NCDOT Oversize/Overweight Permit Unit at least two months before the expiration date.",
+  "page": "1-3"
+ },
+ {
+  "id": "e1-011",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "To renew an escort certificate, the operator should contact the Permit Unit:",
+  "choices": [
+   "At least two months before the expiration date",
+   "Within thirty days after the certificate expires",
+   "At least one year before the expiration date",
+   "Only after a renewal notice arrives in the mail"
+  ],
+  "answer": 0,
+  "explanation": "At least two months before the certificate's expiration date, the operator should contact the NCDOT Oversize/Overweight Permit Unit to obtain the renewal procedure. The Permit Unit also handles name or address changes and replacement of lost certificates.",
+  "page": "1-3"
+ },
+ {
+  "id": "e1-012",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "In North Carolina, a vehicle is oversize when its width is greater than:",
+  "choices": [
+   "8 feet even",
+   "8 feet 6 inches",
+   "9 feet even",
+   "10 feet even"
+  ],
+  "answer": 1,
+  "explanation": "A vehicle is oversize/overweight if its width exceeds eight feet six inches (8'6\"), among the other size and weight conditions listed in the state rules.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-013",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A load is overheight in North Carolina when it is taller than:",
+  "choices": [
+   "12 feet 6 inches",
+   "13 feet even",
+   "13 feet 6 inches",
+   "14 feet 5 inches"
+  ],
+  "answer": 2,
+  "explanation": "Height greater than thirteen feet six inches (13'6\") makes a vehicle oversize. (Fourteen feet five inches is a different threshold: above it, a front pole-car escort is required.)",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-014",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A vehicle is overweight in North Carolina when a single axle carries more than:",
+  "choices": [
+   "18,000 pounds",
+   "20,000 pounds",
+   "34,000 pounds",
+   "38,000 pounds"
+  ],
+  "answer": 1,
+  "explanation": "Weight greater than 20,000 pounds on a single axle or 38,000 pounds on a tandem axle makes a vehicle overweight, as does gross weight above the maximum allowed by the federal bridge law.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-015",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A single vehicle is overlength in North Carolina when it is longer than:",
+  "choices": [
+   "35 feet",
+   "40 feet",
+   "45 feet",
+   "53 feet"
+  ],
+  "answer": 1,
+  "explanation": "Length greater than 40 feet for a single vehicle, or greater than 60 feet for a truck/trailer combination, makes the vehicle oversize.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-016",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A semi-trailer traveling non-restricted NC primary routes (NC, US, and Interstate) is oversize when it is longer than:",
+  "choices": [
+   "45 feet",
+   "48 feet",
+   "53 feet",
+   "57 feet"
+  ],
+  "answer": 2,
+  "explanation": "A semi-trailer longer than 48 feet is oversize on all North Carolina roads; on non-restricted primary routes (NC, US, and Interstate) the limit rises to 53 feet.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-017",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "On a two-lane, two-way highway, a front escort is generally required when the permitted load is wider than:",
+  "choices": [
+   "10 feet",
+   "12 feet",
+   "14 feet",
+   "15 feet"
+  ],
+  "answer": 1,
+  "explanation": "A front escort is required for width in excess of 12 feet on two-lane/two-way highways. On multi-lane highways the same escort runs at the rear of the load, unless the permit states otherwise.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-018",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A front escort equipped with a height pole is required for the entire route when the load is taller than:",
+  "choices": [
+   "13 feet 6 inches",
+   "14 feet even",
+   "14 feet 5 inches",
+   "15 feet even"
+  ],
+  "answer": 2,
+  "explanation": "A front pole car equipped with a height pole indicator is required for overheight loads in excess of fourteen feet five inches (14'5\") for the entire route of travel.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-019",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A rear escort is required for length over 110 feet; both front and rear escorts are required when overall length exceeds:",
+  "choices": [
+   "125 feet",
+   "135 feet",
+   "150 feet",
+   "175 feet"
+  ],
+  "answer": 2,
+  "explanation": "A rear escort is required for length in excess of 110 feet, and both front and rear escorts are required for overall length in excess of 150 feet. An escort is also required for excessive overhang.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-020",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "By weight alone, a front escort is required when the permitted load weighs more than:",
+  "choices": [
+   "99,999 pounds",
+   "120,000 pounds",
+   "132,000 pounds",
+   "149,999 pounds"
+  ],
+  "answer": 3,
+  "explanation": "A front escort is required for weights in excess of 149,999 pounds. Multiple or additional escorts may also be required for combinations of over-dimensions or as determined by the issuing agent.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-021",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A 16-foot-wide mobile home may generally be moved Monday through Saturday only, between the hours of:",
+  "choices": [
+   "9:00 a.m. and 2:30 p.m.",
+   "8:00 a.m. and 5:00 p.m.",
+   "10:00 a.m. and 3:00 p.m.",
+   "7:00 a.m. and 12:00 noon"
+  ],
+  "answer": 0,
+  "explanation": "16-foot-wide mobile homes generally travel Monday through Saturday only (with holiday restrictions on top), and hours are limited to 9 a.m. until 2:30 p.m. Each permit lists the specific requirements.",
+  "page": "1-4"
+ },
+ {
+  "id": "e1-022",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "When escorting a 16-foot-wide mobile home, the escort vehicle should travel an average distance from the home of:",
+  "choices": [
+   "100 to 200 feet",
+   "300 to 500 feet",
+   "500 feet to ¼ mile",
+   "At least ½ mile"
+  ],
+  "answer": 1,
+  "explanation": "For 16-foot-wide mobile homes, the escort vehicle travels an average distance of 300 to 500 feet from the permitted vehicle, whichever suits the geographical location.",
+  "page": "1-5"
+ },
+ {
+  "id": "e1-023",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The yellow banner on a 16-foot-wide mobile home escort vehicle must also state:",
+  "choices": [
+   "The width of the home, for example \"Oversize 16' Load\"",
+   "The NCDOT permit number for the move",
+   "The destination county of the home",
+   "The following distance other drivers must keep"
+  ],
+  "answer": 0,
+  "explanation": "The banner bears the legend \"Oversize Load\" or \"Wide Load\" including the width of the home, in 10\" x 1½\" black brush stroke lettering (for example \"Oversize 16' Load\"), mounted on top of the escort vehicle with 18\" x 18\" red or orange flags on each side.",
+  "page": "1-5"
+ },
+ {
+  "id": "e1-024",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The flashing amber bar light on a 16-foot-wide mobile home escort vehicle must:",
+  "choices": [
+   "Extend the full width of the vehicle's roof",
+   "Be visible for at least one mile in daylight",
+   "Alternate between amber and red flashes",
+   "Be mounted at the front bumper"
+  ],
+  "answer": 0,
+  "explanation": "The amber bar light is mounted on top of the escort vehicle extending the full width of the roof; multiple bar lights must be mounted continuously and connected at the base. Clear lens strobe lights must also operate at the front of the vehicle (in the grill or with the signal lights).",
+  "page": "1-5"
+ },
+ {
+  "id": "e1-025",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "By weight, a load becomes a superload when its gross weight exceeds:",
+  "choices": [
+   "132,000 pounds on seven or more axles",
+   "108,000 pounds on five or more axles",
+   "149,999 pounds on any axle arrangement",
+   "80,000 pounds on fewer than seven axles"
+  ],
+  "answer": 0,
+  "explanation": "A superload is defined by weight in excess of 132,000 pounds gross on seven or more axles, 68,000 pounds on a grouping of four or more axles, or weight above the allowance of a low-limit or posted bridge.",
+  "page": "1-5"
+ },
+ {
+  "id": "e1-026",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "By width, a load (excluding mobile homes) is a superload when it is wider than:",
+  "choices": [
+   "12 feet",
+   "14 feet",
+   "15 feet",
+   "16 feet"
+  ],
+  "answer": 2,
+  "explanation": "Width in excess of 15 feet (excluding mobile homes) makes a permitted load a superload. Superload permits carry specific instructions that must be read carefully.",
+  "page": "1-5"
+ },
+ {
+  "id": "e1-027",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "A superload more than 15 feet wide requires a total of three escorts, one of which must be:",
+  "choices": [
+   "From the NC State Highway Patrol",
+   "An NCDOT permit officer",
+   "A certified rigging supervisor",
+   "A local police unit from each county crossed"
+  ],
+  "answer": 0,
+  "explanation": "Permitted loads in excess of 15 feet in width require a total of three escorts, one of which must be from the NC State Highway Patrol.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-028",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "An escort vehicle must be a passenger vehicle of at least 2,000 pounds gross weight, or a truck of at least ¼-ton rated capacity with a GVWR of no more than:",
+  "choices": [
+   "10,000 pounds",
+   "17,000 pounds",
+   "20,000 pounds",
+   "26,000 pounds"
+  ],
+  "answer": 1,
+  "explanation": "The escort vehicle must be a truck of not less than one-quarter ton rated load capacity but not more than 17,000 pounds GVWR, or a passenger vehicle of not less than 2,000 pounds gross weight.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-029",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "While performing escort duties, the escort vehicle is permitted to tow:",
+  "choices": [
+   "No trailer of any kind",
+   "A trailer weighing under 1,000 pounds",
+   "A single-axle utility trailer only",
+   "A trailer carrying spare parts for the load"
+  ],
+  "answer": 0,
+  "explanation": "Escort vehicles are not permitted to pull a trailer of any kind while escorting a permitted load.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-030",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The escort vehicle's yellow \"WIDE LOAD\" or \"OVERSIZE LOAD\" banner must be 18 inches high with black lettering that is:",
+  "choices": [
+   "10 inches high with 1½-inch brush strokes",
+   "8 inches high with 1-inch brush strokes",
+   "12 inches high with 2-inch brush strokes",
+   "6 inches high with ¾-inch brush strokes"
+  ],
+  "answer": 0,
+  "explanation": "The sign or banner is yellow, 18 inches high, with the legend \"WIDE LOAD\" or \"OVERSIZE LOAD\" in black 10\" x 1½\" brush stroke lettering, and must extend the entire width of the escort vehicle or bumper.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-031",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The flashing amber light on top of the escort vehicle must be visible to approaching traffic in all directions for at least:",
+  "choices": [
+   "300 feet",
+   "500 feet",
+   "1,000 feet",
+   "¼ mile"
+  ],
+  "answer": 1,
+  "explanation": "The rotating or strobe amber light is positioned on top of the escort vehicle and must be visible for at least 500 feet in all directions by approaching traffic.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-032",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "During movement of a permitted load, the escort vehicle's head lamps must be:",
+  "choices": [
+   "Burning at all times",
+   "On only between sunset and sunrise",
+   "On only in rain, fog, or low visibility",
+   "Flashed on and off to warn oncoming traffic"
+  ],
+  "answer": 0,
+  "explanation": "Escort vehicle head lamps must be burning at all times during movement. The towing unit's headlamps must burn during highway movement as well.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-033",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The required STOP/SLOW paddle must be octagonal, mounted on a rigid handle, and measure at least:",
+  "choices": [
+   "18 by 18 inches with 6-inch letters",
+   "12 by 12 inches with 4-inch letters",
+   "24 by 24 inches with 8-inch letters",
+   "16 by 16 inches with 5-inch letters"
+  ],
+  "answer": 0,
+  "explanation": "The STOP/SLOW paddle must be at least 18\" x 18\" with 6-inch-high letters, octagonal, and mounted on a rigid handle. For more visibility, a 24\" x 24\" paddle or a high-intensity flashing paddle may be used.",
+  "page": "1-6",
+  "image": {
+   "src": "data/img/evo-stop-paddle.png",
+   "alt": "Drawing of an octagonal STOP paddle on a staff, dimensioned 18 inches minimum in width and 18 inches minimum in height."
+  }
+ },
+ {
+  "id": "e1-034",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Approved colors for the safety vest, shirt, or coat worn while flagging are:",
+  "choices": [
+   "Orange, yellow, or yellow-green, including fluorescent versions",
+   "Red, white, or silver, including reflective versions",
+   "Any bright color that is visible from 500 feet",
+   "Lime green or safety blue with reflective striping"
+  ],
+  "answer": 0,
+  "explanation": "An approved safety vest, shirt, or coat must be worn while flagging. Approved colors are orange, yellow, yellow-green, or fluorescent versions of these colors.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-035",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The channelization devices an escort vehicle must carry are at least three bi-directional retroreflective triangles with:",
+  "choices": [
+   "17-inch minimum arm length and 2-inch minimum arm width",
+   "12-inch minimum arm length and 1-inch minimum arm width",
+   "20-inch minimum arm length and 3-inch minimum arm width",
+   "15-inch minimum arm length and 4-inch minimum arm width"
+  ],
+  "answer": 0,
+  "explanation": "At least three bi-directional retroreflective triangles are required, with a minimum arm length of 17 inches and a minimum arm width of 2 inches.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-036",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The identification sign showing the escort company's name, address, and phone number must appear on each side of the vehicle, measure at least 8 by 12 inches, and be legible in daylight from:",
+  "choices": [
+   "25 feet",
+   "50 feet",
+   "100 feet",
+   "200 feet"
+  ],
+  "answer": 1,
+  "explanation": "The identification sign must be displayed on each side of the escort vehicle, be a minimum of 8\" x 12\", and be readily legible during daylight hours from a distance of 50 feet.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-037",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "The fire extinguisher required in an escort vehicle is at least:",
+  "choices": [
+   "Five pounds, Type BC or ABC",
+   "Two and a half pounds, Type A",
+   "Ten pounds, Type ABC only",
+   "One pound, any UL-listed type"
+  ],
+  "answer": 0,
+  "explanation": "A fire extinguisher of minimum five pounds, Type \"BC\" or \"ABC\", is required. An extinguisher with a metal head is recommended, since plastic heads lose pressure more easily.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-038",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "While escorting a permitted load, the operator's certificate card must be:",
+  "choices": [
+   "Carried by the operator",
+   "Displayed on the escort vehicle's dashboard",
+   "Kept on file at the company office",
+   "Attached to the permit paperwork in the load vehicle"
+  ],
+  "answer": 0,
+  "explanation": "Escort vehicle operators must carry their certificate card while escorting a permitted load.",
+  "page": "1-6"
+ },
+ {
+  "id": "e1-039",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Spare red flags carried in the escort vehicle may be used for:",
+  "choices": [
+   "Marking the load, but never for flagging traffic",
+   "Flagging traffic if the paddle is misplaced",
+   "Signaling turns to the load driver",
+   "Marking the reflective triangles at night"
+  ],
+  "answer": 0,
+  "explanation": "Red flags are not to be used for flagging traffic; the STOP/SLOW paddle must be used to control traffic. Extra red flags are carried as materials for attaching to the OS/OW load.",
+  "page": "1-7"
+ },
+ {
+  "id": "e1-040",
+  "section": 1,
+  "sectionName": "Certification Program",
+  "manual": "evo",
+  "question": "Items like a first aid kit, jumper cables, a 25-foot tape measure, and spare height pole parts are best described as:",
+  "choices": [
+   "Optional equipment that shows preparation and professionalism",
+   "Equipment required by law on every escort vehicle",
+   "Equipment required only for superload escorts",
+   "Items the load driver, not the escort, must carry"
+  ],
+  "answer": 0,
+  "explanation": "These items are generally not required by law, but carrying them reduces breakdown time, controls costs, and shows professionalism. A true professional is prepared for the unpredictable situations that arise on the highway.",
+  "page": "1-7"
+ },
+ {
+  "id": "e2-001",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Before endangering anyone, every escort vehicle operator must know two things: the limitations of the route, and:",
+  "choices": [
+   "The dimensions of the permitted load",
+   "The retail value of the cargo being moved",
+   "The load driver's years of experience",
+   "The fuel range of the towing vehicle"
+  ],
+  "answer": 0,
+  "explanation": "Each permitted load exceeds the optimum design limits of the highway system, so the escort operator must know the dimensions of the permitted load and the limitations of the highway on the selected route to avoid endangering the public and the load.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-002",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Overwidth loads are a particular hazard to the motoring public because they:",
+  "choices": [
+   "Generally intrude into adjacent lanes and roadway shoulders",
+   "Travel much faster than the surrounding traffic can safely go",
+   "Are harder for other drivers to see than ordinary trucks are",
+   "Cannot use their service brakes fully at highway speeds"
+  ],
+  "answer": 0,
+  "explanation": "Overwidth loads generally impact the adjacent lanes and shoulders, and drivers do not give up \"their lane\" easily. The escort must warn the public that the load is using part of their lane, and watch road width, narrow bridges, and narrow or missing shoulders.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-003",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Rain adds to the danger of an overwidth move because it can:",
+  "choices": [
+   "Soften the shoulders until the load must use more of the oncoming lane",
+   "Wash the painted lane markings off the surface of older two-lane roads",
+   "Make the load's banner and flags too wet to be read by oncoming drivers",
+   "Double the stopping distance of the escort vehicle on downhill grades"
+  ],
+  "answer": 0,
+  "explanation": "Rain may soften roadway shoulders until they are unusable by an overwidth load, forcing the permitted load to take up more of the adjacent oncoming lane. Large patches of asphalt in road bed fill areas mark spots that frequently give way.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-004",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "For an overheight load, the actual load dimensions must be verified:",
+  "choices": [
+   "By the escort vehicle operator before departure",
+   "Only when the route includes an interstate highway",
+   "By the permit office at the time of issue",
+   "Only if the load appears taller than its paperwork states"
+  ],
+  "answer": 0,
+  "explanation": "Overheight loads must be verified by the escort vehicle operator prior to departure. This matters especially for bridges and overpasses whose clearance varies depending on the lane selected.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-005",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Overlength loads must be evaluated at railroad crossings to make sure they do not:",
+  "choices": [
+   "Get high-centered on the tracks",
+   "Trigger the crossing signals early",
+   "Exceed the posted crossing speed",
+   "Block the view of the crossbuck sign"
+  ],
+  "answer": 0,
+  "explanation": "Overlength loads are limited to roads where they can negotiate curves, interchanges, entrances, and exits, and railroad crossings must be checked so long loads do not get high-centered.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-006",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Overweight loads create a traffic hazard mainly because of their:",
+  "choices": [
+   "Reduced speeds",
+   "Wider turning radius",
+   "Extra axles",
+   "Longer stopping distances"
+  ],
+  "answer": 0,
+  "explanation": "Overweight loads represent a traffic hazard due to their reduced speeds. Whenever a permitted load cannot keep up with surrounding traffic and a backup forms, the escorts and transporter must pull to the roadside periodically to let traffic clear.",
+  "page": "2-1"
+ },
+ {
+  "id": "e2-007",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "You are approaching a railroad crossing marked with this warning sign. You should:",
+  "choices": [
+   "Not attempt to cross; pull over, make alternate plans, and call the NCDOT Permit Office",
+   "Cross slowly at a sharp angle so the low point of the trailer clears the hump of the crossing",
+   "Cross only after walking the crossing on foot to check the clearance under the trailer",
+   "Wait for a gap in rail traffic, then take the crossing at normal speed without stopping"
+  ],
+  "answer": 0,
+  "explanation": "The sign warns of a low ground clearance crossing where vehicles can become stuck on the tracks. If you see it, do not attempt to cross: pull over, make alternate plans, and call the NCDOT Permit Office.",
+  "image": {
+   "src": "data/img/evo-railroad-sign.png",
+   "alt": "Diamond-shaped warning sign showing a low truck trailer hung up on the hump of a railroad crossing, with spark marks where the trailer bottom contacts the rails."
+  },
+  "page": "2-2"
+ },
+ {
+  "id": "e2-008",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "A railroad crossing has no low-clearance warning sign. Before taking the load across, you should:",
+  "choices": [
+   "Make a visual check, and not cross if there is any doubt the load can make it",
+   "Cross normally, since the absence of a sign means the crossing is safe",
+   "Have the rear escort push slowly through first",
+   "Ask the railroad for written clearance before every crossing"
+  ],
+  "answer": 0,
+  "explanation": "Even without a warning sign, you must visually check that the load can make it across. If there is any doubt, do not attempt to cross; pull over and make alternate plans. Scrape marks on the pavement near the tracks are a sign other vehicles have bottomed out there.",
+  "page": "2-2"
+ },
+ {
+  "id": "e2-009",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "If the truck gets stuck on or stalls within 15 feet of railroad tracks, the first thing to do is:",
+  "choices": [
+   "Get out and get help immediately",
+   "Try rocking the truck free in low gear",
+   "Unhook the trailer and pull the tractor clear",
+   "Set out reflective triangles along the tracks"
+  ],
+  "answer": 0,
+  "explanation": "If the truck is stuck on or stalls within 15 feet of the tracks, get out and get help immediately, then quickly find the nearest phone and call for help — the track operator's 800 number first if you can identify it.",
+  "page": "2-2"
+ },
+ {
+  "id": "e2-010",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "A train is approaching a truck stuck on the tracks. After getting out, you should run:",
+  "choices": [
+   "Away from the track, toward the direction the train is coming from",
+   "Away from the track, in the direction the train is traveling",
+   "Along the track toward the train, waving it down",
+   "Straight away from the track at a right angle"
+  ],
+  "answer": 0,
+  "explanation": "Run away from the track toward the direction from which the train is coming. This helps you avoid the flying glass and debris that are thrown forward in a collision.",
+  "page": "2-3"
+ },
+ {
+  "id": "e2-011",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "The most important information to give emergency responders about a blocked railroad crossing is the:",
+  "choices": [
+   "DOT-AAR crossing identification number",
+   "Nearest interstate exit number",
+   "Name of the railroad's regional dispatcher",
+   "Permit number of the stalled load"
+  ],
+  "answer": 0,
+  "explanation": "The DOT-AAR crossing identification number is the most important information you can give. It is located on the crossbuck signpost, the signal mast, or the control box; if you cannot find it, give the street, city, or county of the crossing instead.",
+  "page": "2-3",
+  "image": {
+   "src": "data/img/evo-crossing-id.png",
+   "alt": "Example crossing identification sign: CSX Transportation, to report stalled vehicle blocking crossing or other emergency call 1-800-232-0144, refer to crossing ID number 630 657 S, located at mile post 163.43."
+  }
+ },
+ {
+  "id": "e2-012",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Under G.S. 20-142.4, special compliance is required before taking across a railroad any crawler-type tractor, crane, roller, or equipment whose normal operating speed is:",
+  "choices": [
+   "Five miles per hour or less",
+   "Ten miles per hour or less",
+   "Fifteen miles per hour or less",
+   "Twenty miles per hour or less"
+  ],
+  "answer": 0,
+  "explanation": "No one may move a crawler-type tractor, crane, roller, or any equipment or structure with a normal operating speed of five or fewer miles per hour upon or across railroad tracks without first complying with G.S. 20-142.4.",
+  "page": "2-3"
+ },
+ {
+  "id": "e2-013",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "A utility line is hanging low over the route. Who may lift or move it?",
+  "choices": [
+   "Only a trained employee of the utility company",
+   "The escort operator, using a nonconductive pole",
+   "The load driver, if wearing insulated gloves",
+   "Any crew member, once power is confirmed off"
+  ],
+  "answer": 0,
+  "explanation": "Utility lines must only be lifted, moved, or touched by a trained employee of the utility company. Treat all wires, cables, and utility lines as \"HOT\" with no exceptions — many fatalities occur when unqualified persons attempt to move lines.",
+  "page": "2-3"
+ },
+ {
+  "id": "e2-014",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Once mounted on the escort vehicle, the height pole should be set above the maximum height of the load by:",
+  "choices": [
+   "No less than three inches and no more than six inches",
+   "No less than one inch and no more than two inches",
+   "No less than six inches and no more than twelve inches",
+   "Exactly the same height as the load"
+  ],
+  "answer": 0,
+  "explanation": "The height pole should be not less than three inches above the load height and not greater than six inches above the maximum height of the load. Use it to check the height the load driver reports — and never climb the oversize load to measure it.",
+  "image": {
+   "src": "data/img/evo-height-pole.png",
+   "alt": "Two escort vehicles with vertical height poles mounted at the front, each pole topped with a color tip or flag, held by a spring mount, and adjustable in height. One vehicle carries an OVERSIZE LOAD banner and both have amber roof lights."
+  },
+  "page": "2-4"
+ },
+ {
+  "id": "e2-015",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "A height pole must be nonconductive because it:",
+  "choices": [
+   "May come into contact with utility wires",
+   "Would otherwise interfere with the two-way radio",
+   "Must not scratch bridges and overpasses",
+   "Has to bend without snapping in the wind"
+  ],
+  "answer": 0,
+  "explanation": "Height poles must be nonconductive in case they contact utility wires. They must also be adjustable for different load heights, nondestructive (or cheap to replace), and flexible enough to return to their exact height after striking a bridge or overpass.",
+  "page": "2-4"
+ },
+ {
+  "id": "e2-016",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "When the escort vehicle is not escorting a permitted load, the height pole must be stored. The one exception is:",
+  "choices": [
+   "When the driver is checking the route for possible obstacles",
+   "When rain or wind would make removing the pole unsafe",
+   "When the next escort job is due to start within 24 hours",
+   "When the pole is already set below 13 feet 6 inches"
+  ],
+  "answer": 0,
+  "explanation": "The height pole must be stored when not escorting a permitted load. The only exception is when the escort driver is checking the route for possible obstacles.",
+  "page": "2-4"
+ },
+ {
+  "id": "e2-017",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "When measuring overhead barriers along the route, you should measure bridge lanes:",
+  "choices": [
+   "From their mid-point",
+   "At the outside edge of each lane",
+   "At the lowest visible beam",
+   "From the shoulder line"
+  ],
+  "answer": 0,
+  "explanation": "Measure bridge lanes from their mid-point, measure overhead utility wires and power lines at their lowest point, and measure traffic signals to their side — signals are fragile and costly to repair, so avoid hitting them.",
+  "page": "2-4"
+ },
+ {
+  "id": "e2-018",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "The purpose of an escort vehicle is to:",
+  "choices": [
+   "Alert the traveling public to the presence or approach of an overdimensional load",
+   "Clear other traffic out of the load's path by directing it onto the shoulder",
+   "Guarantee that the load arrives on the schedule stated on the face of the permit",
+   "Provide a relief driver for the permitted load on movements over long distances"
+  ],
+  "answer": 0,
+  "explanation": "The purpose of an escort vehicle is to alert the traveling public to the presence or approach of an overdimensional load. Escort drivers also assist the load driver and must obey all traffic laws.",
+  "page": "2-5"
+ },
+ {
+  "id": "e2-019",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "While escorting an overdimensional load, escort drivers and transporters are:",
+  "choices": [
+   "NOT exempt from traffic laws, and have no police powers or emergency-vehicle privileges",
+   "Exempt from posted speed limits, but never from traffic signals and stop signs",
+   "Allowed to operate as emergency vehicles whenever traffic has to be stopped",
+   "Granted temporary police powers that are listed on the face of the permit"
+  ],
+  "answer": 0,
+  "explanation": "Escort drivers and transporters are not exempt from traffic laws and regulations, and escort drivers do not have police powers or permission to operate the vehicle as an emergency vehicle while escorting overdimensional loads.",
+  "page": "2-5"
+ },
+ {
+  "id": "e2-020",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Which of these is a duty of the FRONT escort driver?",
+  "choices": [
+   "Checking the shoulder and alerting the load driver to soft spots, ruts, debris, and mailboxes",
+   "Monitoring the top of the load as it passes under bridges, wires, and covered structures",
+   "Notifying the load driver whenever a motorist behind the convoy attempts to pass the load",
+   "Watching for objects coming loose from the load and for flat tires the driver cannot see"
+  ],
+  "answer": 0,
+  "explanation": "The front escort warns oncoming traffic, radios hazards ahead, checks the shoulder for soft spots and obstructions, confirms the permit route is being followed, watches construction zones, finds safe places to let following traffic pass, and checks overhead clearances for overheight loads. Watching the load itself from behind is rear escort work.",
+  "page": "2-5"
+ },
+ {
+  "id": "e2-021",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "Which of these is a duty of the REAR escort driver?",
+  "choices": [
+   "Alerting the load driver to flat tires, loose objects, and other problems the driver cannot see",
+   "Checking overhead clearances ahead of an overheight load with the height pole indicator",
+   "Warning oncoming traffic on two-lane roads that an overdimensional load is approaching them",
+   "Verifying that the route prescribed on the permit is being followed at every intersection"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort knows the load's dimensions, warns traffic approaching from behind, reports flat tires and objects coming loose, monitors the top of overheight loads under bridges and wires, reports traffic buildup and passing motorists, and keeps the driver informed through curves, turns, bridges, and lane changes. Duties ahead of the load belong to the front escort.",
+  "page": "2-6"
+ },
+ {
+  "id": "e2-022",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "The correct distance between an escort vehicle and the permitted load is:",
+  "choices": [
+   "A judgment call based on traffic, road conditions, road type, speed, and the load",
+   "Exactly 500 feet ahead and behind, measured and reported by the rear escort operator",
+   "Fixed by the permit for the entire route and never changed while the load is moving",
+   "One-quarter mile in all circumstances, whatever the road type or traffic density"
+  ],
+  "answer": 0,
+  "explanation": "There is no one set distance; traffic density, road conditions, road type, speed, type of load, and other factors all come into it. The lead vehicle must give the towing vehicle enough time to slow or stop for an obstructed lane, narrow shoulder, or stalled vehicle.",
+  "page": "2-6"
+ },
+ {
+  "id": "e2-023",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "On a two-lane, two-way road at highway speeds, the lead escort should try to stay ahead of the load by about:",
+  "choices": [
+   "¼ mile (approximately 1,300 feet)",
+   "500 feet at most",
+   "2 miles",
+   "3 to 4 seconds of travel time"
+  ],
+  "answer": 0,
+  "explanation": "On two-lane, two-way roads you are warning approaching vehicles that close the distance rapidly, so keep about ¼ mile (approximately 1,300 feet) ahead at highway speeds, less as speeds slow. The general lead separation is 500 feet to ¼ mile depending on conditions.",
+  "page": "2-6"
+ },
+ {
+  "id": "e2-024",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "On interstates and multi-lane divided highways, the lead escort's separation from the load should never exceed:",
+  "choices": [
+   "½ mile",
+   "¼ mile",
+   "1 mile",
+   "1,300 feet"
+  ],
+  "answer": 0,
+  "explanation": "Higher speeds justify the larger ¼-mile separation and clear radio contact must be maintained, but in no case should the separation exceed ½ mile. Inside cities and towns, congestion calls for a much shorter lead, usually under 200 feet.",
+  "page": "2-6"
+ },
+ {
+  "id": "e2-025",
+  "section": 2,
+  "sectionName": "Functions and Duties",
+  "manual": "evo",
+  "question": "The rear escort vehicle should maintain a following distance behind the load of:",
+  "choices": [
+   "3 to 4 seconds",
+   "1 to 2 seconds",
+   "5 to 6 seconds",
+   "500 feet regardless of speed"
+  ],
+  "answer": 0,
+  "explanation": "A 3 to 4 second following distance should be maintained — at 55 mph a 4-second gap is about 325 feet. In towns and cities, smaller distances may be needed to keep other vehicles from cutting in between the escort and the permitted load.",
+  "page": "2-7"
+ },
+ {
+  "id": "e3-001",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "The escort vehicle's sign or banner is mounted:",
+  "choices": [
+   "On the front for a front escort and on the rear for a rear escort, or on the roof",
+   "On the front of every escort vehicle, whatever position the vehicle works from",
+   "On the rear of every escort vehicle, whatever position the vehicle works from",
+   "On the driver's side of the vehicle, facing the oncoming lane of traffic"
+  ],
+  "answer": 0,
+  "explanation": "The sign or banner is mounted on the front of the vehicle for a front escort and on the rear for a rear escort, and may be roof mounted. It must extend the entire width of the escort vehicle or bumper.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-002",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "When trailing traffic builds up behind the load, escorts and the transporter must pull to the roadside periodically and, while letting traffic pass, slow to a maximum of:",
+  "choices": [
+   "25 mph",
+   "35 mph",
+   "45 mph",
+   "15 mph"
+  ],
+  "answer": 0,
+  "explanation": "Escort vehicles and transport operators must monitor trailing traffic and pull to the roadside periodically to let lines of traffic clear, slowing to a maximum speed of 25 mph to allow traffic to pass.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-003",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "When part of the route uses roads that are not maintained by the state, the permittee must:",
+  "choices": [
+   "Contact the municipality or other authority that operates those roads",
+   "Obtain a second NCDOT permit covering the locally maintained mileage",
+   "Hire a police escort for the section that is not maintained by the state",
+   "Detour as needed to keep the move on state-maintained highways only"
+  ],
+  "answer": 0,
+  "explanation": "NCDOT does not operate every road in the state. When travel is planned on non-state-maintained highways, the municipality or other authority that operates the road must be contacted.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-004",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Around Christmas, permitted vehicles may NOT travel:",
+  "choices": [
+   "From noon on December 22 until noon on December 26",
+   "On December 24 and 25 only",
+   "From December 20 through December 27",
+   "From midnight December 23 until midnight December 26"
+  ],
+  "answer": 0,
+  "explanation": "Permitted vehicles cannot travel on Christmas from noon on December 22 until noon on December 26. Independence Day and Thanksgiving are also barred, from noon on the weekday before the holiday until noon on the weekday after.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-005",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Unless the permit states otherwise, transporting a permitted load is prohibited:",
+  "choices": [
+   "Between sunset and sunrise",
+   "Between 6 p.m. and 6 a.m.",
+   "On weekends and state holidays",
+   "During the morning and evening rush hours"
+  ],
+  "answer": 0,
+  "explanation": "Transportation of a permitted load is prohibited between sunset and sunrise, unless otherwise stated on the permit.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-006",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "After the job is finished and the escort vehicle is driving without a load, the operator should:",
+  "choices": [
+   "Remove the banners, signs, and flags, and turn off the amber lights",
+   "Leave the equipment mounted so it is ready for the next job",
+   "Cover only the amber lights and leave the signs up",
+   "Keep the amber lights flashing until back at the terminal"
+  ],
+  "answer": 0,
+  "explanation": "Banners, signs, and flags should be removed from the escort vehicle after the job and before driving while not escorting a load, and the amber lights should be turned off.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-007",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "The only passenger allowed to ride in an escort vehicle during a move is:",
+  "choices": [
+   "A person who holds an approved escort vehicle operator certification",
+   "An employee of the trucking company that is moving the permitted load",
+   "A trainee riding along under the supervision of the certified operator",
+   "A member of the operator's family who is over 18 years of age"
+  ],
+  "answer": 0,
+  "explanation": "The escort operator should travel alone — no passengers or animals — to minimize distractions and keep full attention on the job. The only exception is a passenger who has an approved escort vehicle operator certification.",
+  "page": "3-1"
+ },
+ {
+  "id": "e3-008",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "While escorting, an operator may use an electronic device only to:",
+  "choices": [
+   "Communicate hazard-related information to the vehicle being escorted",
+   "Take work calls from the escort company's dispatcher between towns",
+   "Play turn-by-turn navigation prompts aloud through the vehicle stereo",
+   "Photograph the load at rest stops for the company's trip records"
+  ],
+  "answer": 0,
+  "explanation": "Escort operators are prohibited from using any electronic device — cell phones, tablets, computers, music or video players, or any non-factory-installed device not used for routing — except to communicate hazard-related information to the vehicle being escorted.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-009",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Escort vehicles and oversize loads must travel at a speed that is:",
+  "choices": [
+   "Safe for conditions, never above the posted maximum or the speed on the permit",
+   "At least 10 mph under the posted limit at all times, whatever the conditions are",
+   "Set by the lead escort operator based on the traffic it can see ahead of the load",
+   "Within 5 mph of the surrounding traffic, so the convoy never obstructs the flow"
+  ],
+  "answer": 0,
+  "explanation": "Escort vehicles and oversize loads must travel at a speed safe for conditions, and must not exceed the posted maximum speed or the speed stated on the permit.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-010",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "The emergency four-way flashers on the escort vehicle are not to be used unless:",
+  "choices": [
+   "Speed is under 40 mph or under the posted minimum speed",
+   "The load is more than 12 feet wide or 110 feet long",
+   "Visibility has dropped to less than one mile in haze",
+   "The convoy is crossing a bridge or narrow structure"
+  ],
+  "answer": 0,
+  "explanation": "Four-way flashers are not to be used unless the speed is less than 40 mph or less than the posted minimum speed.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-011",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "An oversize/overweight permit is NOT valid when:",
+  "choices": [
+   "Visibility is under 500 feet, the highway is covered with ice or snow, or wind gusts exceed 25 mph",
+   "The temperature falls below freezing at any point along the permitted route, even with the pavement dry",
+   "Rain of any intensity is falling anywhere along the permitted route or is forecast within the travel day",
+   "The forecast calls for thunderstorms within 24 hours of the scheduled start of the permitted move"
+  ],
+  "answer": 0,
+  "explanation": "Permits are not valid when visibility is less than 500 feet, the highway is covered with ice or snow, wind gusts exceed 25 mph, or the Division of Highways or law enforcement with jurisdiction considers travel unsafe. Travel should cease whenever conditions do not permit safe movement.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-012",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Permitted vehicles owned by the same company, or leaving from the same origin, must travel:",
+  "choices": [
+   "At least 2 miles apart — convoy travel is not authorized",
+   "In a convoy no longer than three loads",
+   "At least 500 feet apart with an escort between them",
+   "On different routes assigned by the permit office"
+  ],
+  "answer": 0,
+  "explanation": "Convoy travel is not authorized, and a citation will be issued for traveling in a convoy. Permitted vehicles owned or leased by the same company, or originating at the same location, must travel not less than 2 miles apart.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-013",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Checking the proposed route, and detouring when necessary, is the responsibility of the:",
+  "choices": [
+   "Permittee",
+   "NCDOT permit office",
+   "Lead escort operator",
+   "County traffic engineer"
+  ],
+  "answer": 0,
+  "explanation": "It is the permittee's responsibility to check the proposed route and detour when necessary. Issuance of a permit does not guarantee overhead or width clearances, so pre-driving the route is wise when escorting an especially large or overheight load on unfamiliar roads.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-014",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "In the pre-trip check of the permitted load, flags should be attached:",
+  "choices": [
+   "To the corners of the load and on any overhangs",
+   "To the escort vehicle's mirrors",
+   "Only at the rear-most point of the load",
+   "Every ten feet along each side of the load"
+  ],
+  "answer": 0,
+  "explanation": "During pre-trip, confirm the flags are attached to the corners of the load and on any overhangs, the sign or banner is on the roof and visible front and back with nothing obscuring it, the flashing light works, and the measurements have been double-checked.",
+  "page": "3-2"
+ },
+ {
+  "id": "e3-015",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "The flashing light on the permitted load must have at least a 5-inch diameter base, a 4-inch lens height, and be visible to approaching traffic in all directions for:",
+  "choices": [
+   "A minimum of 500 feet",
+   "A minimum of 300 feet",
+   "A minimum of 1,000 feet",
+   "A minimum of ¼ mile"
+  ],
+  "answer": 0,
+  "explanation": "The load's flashing light must have a minimum 5-inch diameter base and 4-inch lens height, with visibility of at least 500 feet by approaching traffic in all directions.",
+  "page": "3-3"
+ },
+ {
+  "id": "e3-016",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Planning communications before the trip includes agreeing on:",
+  "choices": [
+   "Primary and backup radio channels, and how much talk the load driver wants",
+   "A written script covering every radio call to be made on the permitted route",
+   "Separate radio frequencies for each escort vehicle and one for the load driver",
+   "Hand signals that can replace the radio entirely when traffic noise is heavy"
+  ],
+  "answer": 0,
+  "explanation": "Pre-trip communication checks cover primary and backup channels, phone numbers if cell phones are available, batteries and adapter cords, and the manner of communication — when and how much talk the driver wants. Trip planning also verifies the permitted route and identifies spots needing extra caution.",
+  "page": "3-3"
+ },
+ {
+  "id": "e3-017",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "During a two-lane move with a single escort, the escort vehicle normally runs:",
+  "choices": [
+   "In front of the load, moving to the rear when needed to coach the driver through obstacles",
+   "Behind the load at all times, watching the tail swing and the traffic coming up from the rear",
+   "Beside the load in the adjacent lane whenever the width of the shoulder makes room for it",
+   "Ahead on the opposite side of the road, facing oncoming traffic with the STOP paddle shown"
+  ],
+  "answer": 0,
+  "explanation": "With one escort, the vehicle runs in front of the oversize load — headlights on, amber lights flashing, banner mounted — in operating mode, but the operator may need to move from the lead to the rear to check the load and \"coach\" the driver through curves, bridges, or narrow streets.",
+  "image": {
+   "src": "data/img/evo-two-lane-one-car.png",
+   "alt": "Diagram of a two-lane divided highway: a single escort vehicle with a height pole travels ahead of the OVERSIZE LOAD truck in the same lane, both moving the same direction, with a median separating opposing traffic."
+  },
+  "page": "3-4"
+ },
+ {
+  "id": "e3-018",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Except when clearing an obstacle, the lead escort operator should always drive:",
+  "choices": [
+   "On the right side of the highway",
+   "Straddling the center line",
+   "On whichever side gives the best sight line",
+   "On the left side, mirroring the load's position"
+  ],
+  "answer": 0,
+  "explanation": "The escort vehicle operator should always drive on the right side of the highway unless trying to clear an obstacle. The lead runs about 500 feet to ¼ mile ahead and never more than ½ mile ahead of the load.",
+  "page": "3-4"
+ },
+ {
+  "id": "e3-019",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "In a two-car escort, the rear escort positions itself:",
+  "choices": [
+   "On the left-hand side of the right lane, even with the left side of the load",
+   "Directly behind the center of the load, matching its speed exactly",
+   "On the right edge line, matching the position of the load's right fender",
+   "In the left lane, holding position one full car length behind the load"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort drives on the left-hand side of the right lane, even with the left side of the load, while the load driver keeps the right front fender even with the edge line unless obstacles are on the shoulder. The rear escort must never sit in the load driver's blind spot, and reports any vehicles about to pass.",
+  "image": {
+   "src": "data/img/evo-two-lane-two-car.png",
+   "alt": "Diagram of a two-lane divided highway: a lead escort travels ahead of the OVERSIZE LOAD truck and a rear escort follows behind, offset toward the left side of the lane, all moving the same direction."
+  },
+  "page": "3-4"
+ },
+ {
+  "id": "e3-020",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "When the load must pass a slower vehicle, the maneuver starts when the:",
+  "choices": [
+   "Rear escort moves into the left lane to block following traffic",
+   "Load pulls out as soon as its driver sees a gap",
+   "Lead escort forces the slower vehicle onto the shoulder",
+   "Slower vehicle is waved past the load"
+  ],
+  "answer": 0,
+  "explanation": "After the permitted driver confirms the intention to pass, the rear escort moves into the left lane to block following traffic, then radios the load driver which way to move and how many lanes. The load never changes lanes — out or back — until the rear escort radios that it is okay.",
+  "page": "3-5",
+  "image": {
+   "src": "data/img/evo-passing-radio.png",
+   "alt": "Figs. 4 and 5: two highway diagrams of the OVERSIZE LOAD passing a slower car. The rear escort radios the permitted driver \"you are clear to move left one lane\" to pass, and then \"move back right one lane.\""
+  }
+ },
+ {
+  "id": "e3-021",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "During a pass, the slow-moving vehicle must never end up:",
+  "choices": [
+   "Caught between the load and an escort vehicle",
+   "In radio contact with the escort team",
+   "Ahead of the lead escort vehicle",
+   "On the shoulder while the load goes by"
+  ],
+  "answer": 0,
+  "explanation": "The lead escort informs the load driver and the other escorts of the slow-moving vehicle and makes sure every following vehicle has clearance to get past it. The slow vehicle must not get caught between the load and an escort vehicle.",
+  "page": "3-5"
+ },
+ {
+  "id": "e3-022",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Reporting an obstruction on the shoulder, the lead escort tells the team:",
+  "choices": [
+   "How far off the edge line the obstruction sits, in feet",
+   "The obstruction's license plate number and its owner",
+   "How long the obstruction has been sitting on the shoulder",
+   "The number of the mile marker nearest the obstruction"
+  ],
+  "answer": 0,
+  "explanation": "The lead escort radios how far off the white edge line the obstruction is in feet — for example, \"There is a car on the shoulder, two feet off of the edge line. Move one lane left.\" The lead then moves left and stays there until the load has passed the obstruction.",
+  "page": "3-6",
+  "image": {
+   "src": "data/img/evo-shoulder-obstruction.png",
+   "alt": "Fig. 6: a car sits on the shoulder ahead of the OVERSIZE LOAD. The lead vehicle has informed the permitted load of the hazard on the shoulder, and the rear escort vehicle checks for the permitted vehicle to move left."
+  }
+ },
+ {
+  "id": "e3-023",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "After the lead escort reports a shoulder obstruction, the load may move left only when the:",
+  "choices": [
+   "Rear escort has blocked the left lane and radioed that it is clear",
+   "Lead escort has passed the obstruction and returned to the right lane",
+   "Load driver has checked the mirror and seen the left lane standing open",
+   "Obstruction is confirmed to be within two feet of the white edge line"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort moves one lane left as soon as the lead radios the obstruction. Once the rear escort has blocked traffic from passing, it notifies the load driver that it is clear to move left; when the load is past, the rear escort tells the driver to move back to the right lane.",
+  "page": "3-6"
+ },
+ {
+  "id": "e3-024",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "To take a load across a two-lane bridge carrying two-way traffic, the lead escort must first:",
+  "choices": [
+   "Cross the bridge and stop the oncoming traffic on the far side",
+   "Park at the near end of the bridge with the STOP paddle out",
+   "Radio the highway patrol to close the bridge",
+   "Wave the load across while driving alongside it"
+  ],
+  "answer": 0,
+  "explanation": "Traffic must be stopped for the load to cross. The lead escort crosses the bridge, waits for a break, angles the vehicle with the STOP sign displayed out the window (never while moving), stops the oncoming traffic, then radios the team that it is clear to cross after the last car — identifying that car's color and make.",
+  "image": {
+   "src": "data/img/evo-two-lane-bridge.png",
+   "alt": "Diagram of a two-lane road crossing a narrow bridge: the lead escort has crossed to the far side and stopped facing oncoming traffic at an angle, while the OVERSIZE LOAD truck and rear escort wait to cross from the other side."
+  },
+  "page": "3-7"
+ },
+ {
+  "id": "e3-025",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "When radioing that the bridge is clear to cross, the lead escort should also give the:",
+  "choices": [
+   "Color and make of the last car that will pass",
+   "Number of cars that were stopped",
+   "Estimated wait time for stopped traffic",
+   "Width of the bridge in feet"
+  ],
+  "answer": 0,
+  "explanation": "The lead escort radios the load driver and rear escort that it is clear to cross after the last car passes, and includes the color and make of that last car so the team knows exactly when the road is theirs.",
+  "page": "3-7",
+  "image": {
+   "src": "data/img/evo-bridge-crossing-signal.png",
+   "alt": "Fig. 9: the lead escort driver, stopped across the bridge facing oncoming traffic, gives the radio signal that traffic is stopped and it is okay for the permitted load to cross the bridge."
+  }
+ },
+ {
+  "id": "e3-026",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "While crossing a narrow two-lane bridge, the oversized load should drive:",
+  "choices": [
+   "In the center of the road, after both escorts have said it is clear",
+   "Tight against the right-hand rail, leaving the other lane fully open",
+   "In its own lane, exactly as it would on any open stretch of highway",
+   "Behind the lead escort at a 3 to 4 second gap the whole way across"
+  ],
+  "answer": 0,
+  "explanation": "The oversized load drives in the center of the road while crossing and does not move until both the lead and rear escorts have said it is clear. The rear escort \"coaches\" the driver across, checking clearance on both sides — and above, if the load is overheight and the bridge is covered.",
+  "page": "3-8"
+ },
+ {
+  "id": "e3-027",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "While the load crosses the bridge, the rear escort stops the traffic behind it so that:",
+  "choices": [
+   "Following cars do not hit the lead escort stopped on the other side",
+   "The bridge never carries more than one vehicle at any one time",
+   "The load can back straight up if it meets an obstruction midway",
+   "Oncoming traffic can be released a few moments sooner afterward"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort stops traffic behind the escort and load so those vehicles do not hit the lead escort vehicle on the other side. If a vehicle goes around the rear escort, the load driver and lead escort must be told immediately; stopped traffic may proceed as soon as the load has cleared the bridge.",
+  "page": "3-8"
+ },
+ {
+  "id": "e3-028",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Crossing a multi-lane bridge with one-way traffic, the load is kept safe by the:",
+  "choices": [
+   "Rear escort moving left to block traffic while the load runs the center of the road",
+   "Lead escort stopping all oncoming traffic at the far end before the load starts across",
+   "Load hugging the right lane the whole way across while both escorts hold the left lane",
+   "Escorts leapfrogging each other from span to span while the load follows between them"
+  ],
+  "answer": 0,
+  "explanation": "The lead escort announces the obstacle and advises the load to move left; the rear escort moves left to block traffic from passing, radios the all clear, and coaches the load — which drives the center of the road once both escorts are in position — then reports when the load has cleared the bridge and can move back right.",
+  "page": "3-9",
+  "image": {
+   "src": "data/img/evo-multilane-bridge.png",
+   "alt": "Fig. 10: multi-lane bridge with one-way traffic. The lead escort travels ahead of the OVERSIZE LOAD while the rear escort blocks the left lane; the lead escort operator requests the permitted load driver to \"move left one lane.\""
+  }
+ },
+ {
+  "id": "e3-029",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "When the convoy merges onto an interstate at an interchange, which vehicle enters the highway first?",
+  "choices": [
+   "The rear escort, which then radios when it is clear to move left",
+   "The lead escort, accelerating to full highway speed on the ramp",
+   "The permitted load, with both escort vehicles following it on",
+   "Whichever vehicle reaches the ramp first, to keep the convoy moving"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort enters the highway first and radios the lead escort and load driver when it is clear to move one lane left, keeping other motorists from getting between it and the load while merging. The lead escort stays close to the load, enters at low speed, and warns traffic that an oversize load is merging.",
+  "page": "3-11",
+  "image": {
+   "src": "data/img/evo-interchange.png",
+   "alt": "Fig. 13: a cloverleaf interchange with the escort vehicles staying close to the OVERSIZE LOAD as the convoy merges onto the highway."
+  }
+ },
+ {
+  "id": "e3-030",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Through an interchange, the rear escort's main job is to:",
+  "choices": [
+   "Monitor the swing of the load so it does not hit roadside obstructions",
+   "Set the pace for the whole convoy from the back with the amber lights on",
+   "Watch the height pole on the lead vehicle for contact with overhead wires",
+   "Stop all traffic on the entrance ramp behind the load until it has merged"
+  ],
+  "answer": 0,
+  "explanation": "The front and rear escorts guide the load through the interchange. The rear escort monitors the swing of the load, makes sure it will not strike any roadside obstruction, and relays anything important to the load driver.",
+  "page": "3-11",
+  "image": {
+   "src": "data/img/evo-interchange-monitor.png",
+   "alt": "Fig. 14: the OVERSIZE LOAD rounds the cloverleaf ramp while the rear escort vehicle monitors its clearances against the roadside."
+  }
+ },
+ {
+  "id": "e3-031",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "To make a right turn at an intersection, the permitted load will need to:",
+  "choices": [
+   "Swing left before turning, while escorts keep motorists out of the gap",
+   "Hug the curb through the whole turn",
+   "Stop in the intersection and back around the corner",
+   "Wait for the light to turn red so cross traffic is stopped"
+  ],
+  "answer": 0,
+  "explanation": "The load must swing left to make a right turn. The lead escort makes the turn first to warn motorists that the load will take part of their lane; the rear escort keeps motorists from getting between the load and the curb, and the load stops immediately if a motorist gets inside.",
+  "page": "3-12",
+  "image": {
+   "src": "data/img/evo-right-turn.png",
+   "alt": "Fig. 17: at an intersection, the permitted vehicle swings wide to the left to make a right turn while the rear escort vehicle monitors from behind."
+  }
+ },
+ {
+  "id": "e3-032",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "During a right turn, a car slips between the load and the curb. The load driver should be told to:",
+  "choices": [
+   "Stop the load immediately and let the motorist pass",
+   "Complete the turn quickly to close the gap",
+   "Sound the horn until the car backs out",
+   "Swing wider to give the car more room"
+  ],
+  "answer": 0,
+  "explanation": "If a motorist gets between the load and the escort vehicle or curb, notify the load driver to stop the load immediately and allow the motorist to pass before resuming the move through the intersection.",
+  "page": "3-12"
+ },
+ {
+  "id": "e3-033",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Escorting an overheight load through town, the lead escort should run the height pole:",
+  "choices": [
+   "In the same place on the road where the peak of the load will travel",
+   "Along the curb line on the right, where the utility wires hang the lowest",
+   "Down the exact center of every street, splitting the lanes evenly each way",
+   "A full lane to the left of the load's path, clear of the overhead hazards"
+  ],
+  "answer": 0,
+  "explanation": "The lead escort must watch for overhead hazards and run the height pole at the same place where the peak of the load will be. Sometimes the load can split between obstacles such as traffic lights; other times it must drive around them, with oncoming traffic stopped far enough back for the load to clear.",
+  "image": {
+   "src": "data/img/evo-town-hazards.png",
+   "alt": "Diagram of a city intersection labeling the hazards around an OVERSIZE LOAD: overhead power lines, overhead traffic lights, hydrants, parked cars, a bicycle lane, and pedestrians in crosswalks."
+  },
+  "page": "3-14"
+ },
+ {
+  "id": "e3-034",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "The lead escort clears a signalized intersection but the load does not. The lead escort should:",
+  "choices": [
+   "Pull safely off to the right and wait for the signal to change",
+   "Back up through the intersection to rejoin the load",
+   "Continue to the next intersection and wait there",
+   "Direct the cross traffic to stop until the load is through"
+  ],
+  "answer": 0,
+  "explanation": "Try to remain with the load. If the lead escort makes it through an intersection and the load does not, the lead should pull safely off to the right and wait until the signal changes — never leaving the load so far behind that it is unsure whether it can clear intersections cleanly.",
+  "page": "3-14"
+ },
+ {
+  "id": "e3-035",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "If the load must drive on the wrong side of a city street to dodge signals or wires, the rear escort must:",
+  "choices": [
+   "Hold traffic until the load is back in its proper lane",
+   "Drive ahead of the load until it returns to its lane",
+   "Report the deviation to the permit office",
+   "Wave following traffic past on the right"
+  ],
+  "answer": 0,
+  "explanation": "If dodging an obstacle puts the load onto the wrong side of the road, the rear escort holds traffic until the load is back in the proper lane, and never lets traffic pass while the load is moving under obstacles — something could fall and hurt a pedestrian or motorist.",
+  "page": "3-14"
+ },
+ {
+  "id": "e3-036",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "Watching an overheight load through city wires and signals, the rear escort is usually best positioned at the:",
+  "choices": [
+   "Rear corner of the load on the side that has the peak",
+   "Front corner of the load opposite the peak",
+   "Center of the lane two car lengths back",
+   "Opposite curb, level with the load"
+  ],
+  "answer": 0,
+  "explanation": "The rear escort must be where the wires and traffic signals can be seen — usually the rear corner of the load on the side that has the peak — ready to tell the driver to stop immediately if the load is about to hit something, and able to see the signal to report which way to move and when the light changes.",
+  "page": "3-14"
+ },
+ {
+  "id": "e3-037",
+  "section": 3,
+  "sectionName": "Highway Operations",
+  "manual": "evo",
+  "question": "On town and city streets, the oversize load should drive:",
+  "choices": [
+   "On the lane divider line, taking up both lanes",
+   "As close to parked cars as clearance allows",
+   "In the right lane with its flashers on",
+   "In the left lane, away from pedestrians"
+  ],
+  "answer": 0,
+  "explanation": "Driving on the lane divider line takes up both lanes so motorists cannot pass, and lessens the chance of hitting parked cars. If the rear escort gets stopped at an intersection, the load should slow down and wait for it to get back into position so the back of the load stays protected.",
+  "page": "3-15"
+ },
+ {
+  "id": "e4-001",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "The basic steps at any accident scene, in order of priority, are:",
+  "choices": [
+   "Protect the area, notify authorities, care for the injured",
+   "Care for the injured, move the vehicles, exchange insurance",
+   "Notify authorities, photograph the scene, care for the injured",
+   "Clear the roadway, care for the injured, notify authorities"
+  ],
+  "answer": 0,
+  "explanation": "The basic steps at any accident are to protect the area, notify authorities, and care for the injured. The first job is keeping another accident from happening at the same spot.",
+  "page": "4-1"
+ },
+ {
+  "id": "e4-002",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "If you stop to help at an accident that does not involve your vehicle, you should park:",
+  "choices": [
+   "Away from the accident, leaving the immediate area for emergency vehicles",
+   "Directly behind the wrecked vehicles, shielding them from approaching traffic",
+   "Across the open lane, forcing every approaching driver to slow to a crawl",
+   "On the opposite shoulder, facing the scene with the headlights turned on"
+  ],
+  "answer": 0,
+  "explanation": "If you are stopping to help, park away from the accident — the area immediately around it will be needed for emergency vehicles. If your own vehicle is involved, try to get it to the side of the road. Put on your flashers and set out reflective triangles in time for other drivers to react.",
+  "page": "4-1"
+ },
+ {
+  "id": "e4-003",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "A seriously injured person at an accident scene should be moved only if:",
+  "choices": [
+   "Fire or passing traffic makes it necessary",
+   "They ask to be moved to somewhere more comfortable",
+   "An ambulance is more than 15 minutes away",
+   "They must be laid flat to check for bleeding"
+  ],
+  "answer": 0,
+  "explanation": "Do not move a seriously injured person unless the danger of fire or passing traffic makes it necessary. Stop heavy bleeding by applying direct pressure to the wound, and keep the injured person warm.",
+  "page": "4-1"
+ },
+ {
+  "id": "e4-004",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Damage to stop signs, warning signs, or traffic signals in an accident must be reported:",
+  "choices": [
+   "Immediately",
+   "Within 24 hours",
+   "Within 10 business days",
+   "Only if the damage blocks the roadway"
+  ],
+  "answer": 0,
+  "explanation": "Any accident with death, injury, or property damage must be reported to police authorities as quickly as possible, and any damage to stop signs, warning signs, or traffic signals must be reported immediately. Exchange names, addresses, and insurance information with the other drivers when everyone is able.",
+  "page": "4-1"
+ },
+ {
+  "id": "e4-005",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "You damage an unattended vehicle and cannot find its owner. Besides leaving a note with your details, you must report the accident in writing to the Highway Patrol or municipal police within:",
+  "choices": [
+   "24 hours",
+   "48 hours",
+   "5 days",
+   "10 days"
+  ],
+  "answer": 0,
+  "explanation": "Make a reasonable effort to find the owner or caretaker; failing that, leave an easily found note with your name, address, driver license number, license plate number, the date and time, and a damage estimate — and report the accident in writing within 24 hours to the Highway Patrol or the police department of the municipality involved.",
+  "page": "4-2"
+ },
+ {
+  "id": "e4-006",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "The basic functions of flagging are to protect the lives of workers, guide traffic safely, answer questions courteously, and to:",
+  "choices": [
+   "Avoid unreasonable delays to motorists",
+   "Record the plates of drivers who disobey",
+   "Keep the load moving at permit speed",
+   "Direct traffic onto detour routes"
+  ],
+  "answer": 0,
+  "explanation": "Flagging is a normal part of escort operations — for loads entering the highway, narrow sections, tire changes, and the like. Its basic functions are to protect workers' lives, guide traffic safely, avoid unreasonable delays to motorists, and answer questions courteously and intelligently.",
+  "page": "4-2"
+ },
+ {
+  "id": "e4-007",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "When the STOP/SLOW paddle is mounted on a long staff rather than a short handle, the recommended mounting height is:",
+  "choices": [
+   "7 feet",
+   "5 feet",
+   "6 feet",
+   "8 feet"
+  ],
+  "answer": 0,
+  "explanation": "For portability a 1-foot handle may be used, but when the paddle is mounted on a long staff, a 7-foot mounting height is recommended.",
+  "page": "4-2"
+ },
+ {
+  "id": "e4-008",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Which items are NOT permitted while flagging?",
+  "choices": [
+   "Transistor radios, walkmans, and books",
+   "Brightly colored hats and gloves",
+   "Water bottles and sunscreen",
+   "Two-way radios and cell phones"
+  ],
+  "answer": 0,
+  "explanation": "To assure motorist respect, flaggers maintain a clean, neat appearance, wear proper attire and safe footwear — and transistor radios, walkmans, and books are not permitted. A brightly colored hat adds visibility.",
+  "page": "4-3"
+ },
+ {
+  "id": "e4-009",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "When flagging, the safe place to stand is:",
+  "choices": [
+   "On the shoulder, facing traffic, never turning your back on it",
+   "In the closed lane, where drivers expect a flagger",
+   "On the center line, visible to both directions",
+   "Behind the paddle staff, with traffic approaching from behind"
+  ],
+  "answer": 0,
+  "explanation": "Stand in a safe position on the shoulder facing traffic. Never stand in the path of oncoming traffic and never turn your back on traffic.",
+  "image": {
+   "src": "data/img/evo-stopping-traffic.png",
+   "alt": "A flagger in an orange vest and hard hat stands on the shoulder beside a reflective triangle, holding a STOP paddle on a staff toward approaching traffic with the free hand raised, palm out."
+  },
+  "page": "4-3"
+ },
+ {
+  "id": "e4-010",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "To stop traffic, hold the STOP paddle away from your body near the pavement edge and:",
+  "choices": [
+   "Raise your free hand palm out and make eye contact with the driver",
+   "Wave the paddle slowly from side to side above the level of your head",
+   "Point at the approaching driver and then at the spot where they must stop",
+   "Step one pace into the lane so the approaching driver has to slow down"
+  ],
+  "answer": 0,
+  "explanation": "Hold the paddle away from your body with the STOP face toward traffic, on or near the edge of the pavement; raise your free hand with the palm exposed to the approaching vehicle and make eye contact with the driver. Change the paddle to STOP only when an approaching vehicle has enough distance to stop gradually — avoid screeching halts.",
+  "page": "4-3"
+ },
+ {
+  "id": "e4-011",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Before releasing your line of stopped traffic, you must first:",
+  "choices": [
+   "Receive the \"all clear\" signal from the other flagger",
+   "Count the vehicles that are waiting in the stopped queue",
+   "Move your own vehicle completely out of the closed lane",
+   "Sound one long blast on a whistle toward the open lane"
+  ],
+  "answer": 0,
+  "explanation": "Whether you stand on the closed lane or the open lane, you wait for the \"all clear\" from the other flagger, then release traffic by turning the paddle to SLOW and signaling drivers into the open lane with your free arm — direct and clear, pointing to the open lane. On the open-lane side, step back from the pavement edge first.",
+  "page": "4-4",
+  "image": {
+   "src": "data/img/evo-releasing-traffic.png",
+   "alt": "A flagger on the shoulder shows the SLOW face of the paddle and signals stopped drivers to proceed into the open lane with the free arm."
+  }
+ },
+ {
+  "id": "e4-012",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "To slow traffic rather than stop it, show the SLOW paddle and:",
+  "choices": [
+   "Slowly raise and lower your arm with the palm facing down",
+   "Sweep your arm toward the shoulder repeatedly",
+   "Hold your free hand up with the palm out",
+   "Rotate the paddle back and forth on its staff"
+  ],
+  "answer": 0,
+  "explanation": "Stand on the shoulder facing traffic with the SLOW sign showing, and slowly raise and lower your left arm, palm facing down, in front of your paddle.",
+  "page": "4-4",
+  "image": {
+   "src": "data/img/evo-slowing-traffic.png",
+   "alt": "A flagger on the shoulder shows the SLOW paddle and slowly raises and lowers the left arm, palm down, in front of the paddle."
+  }
+ },
+ {
+  "id": "e4-013",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "The most common method of flagging traffic around a blockage is:",
+  "choices": [
+   "Two flaggers, one at each end of the controlled stretch, with one designated as lead",
+   "A single flagger standing beside the blockage where both directions can see the paddle",
+   "One flagger working with a portable temporary traffic signal placed at the blockage",
+   "Rolling roadblocks run by the escort vehicles with their amber lights and flashers on"
+  ],
+  "answer": 0,
+  "explanation": "The two-flagger operation — a flagger at each end of the stretch needing control, one designated lead flagger to coordinate — is the most common method. A single flagger is used only for a short, straight stretch of low-volume road, standing where both directions can see them, on the shoulder opposite the disabled load.",
+  "page": "4-5",
+  "image": {
+   "src": "data/img/evo-two-flagger.png",
+   "alt": "Two-flagger operation: a flagger with a STOP paddle at each end of the controlled stretch of road, with the disabled load and triangles between them and traffic held in both directions."
+  }
+ },
+ {
+  "id": "e4-014",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "When two flaggers cannot see each other and radios fail, they can still coordinate by:",
+  "choices": [
+   "Having the driver of the last released vehicle carry a flag or token between them",
+   "Releasing traffic from each end on a fixed five-minute cycle timed by their watches",
+   "Sounding horn signals from their vehicles in a pattern agreed on before the stop began",
+   "Walking to the midpoint between their stations and exchanging hand signals from there"
+  ],
+  "answer": 0,
+  "explanation": "Flaggers must always be able to communicate: by visual contact when close enough to read each other's paddles and signals, by two-way radio (the best means, even with visual contact), or by flag carrying — the driver of the last vehicle passes a flag or token from one flagger to the other. The same fallback applies at a curve, hill, or obstructed-view section.",
+  "page": "4-5",
+  "image": {
+   "src": "data/img/evo-curve-setup.png",
+   "alt": "Disabled vehicle on a curve, hill, or obstructed-view section of road: a two-flagger operation with flaggers on each approach and triangles set at 10-foot and repeated 100-foot spacings before the OVERSIZE LOAD."
+  }
+ },
+ {
+  "id": "e4-015",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Setting up traffic control around a disabled vehicle, your best source of advance warning for approaching drivers is:",
+  "choices": [
+   "Your own vehicle with its amber light, backed by triangles, flares, and cones",
+   "The disabled vehicle's own four-way flashers, which every approaching driver knows",
+   "A flagger posted at the scene itself, where the blockage is easiest to point out",
+   "The horn of the disabled vehicle, sounded steadily until the roadway is cleared"
+  ],
+  "answer": 0,
+  "explanation": "Give approaching traffic as much advance warning as possible — reflective triangles, flares, cones and, more importantly, your own vehicle with its amber light. Drivers given enough warning will generally cooperate and move safely past the scene.",
+  "image": {
+   "src": "data/img/evo-disabled-shoulder.png",
+   "alt": "Diagram of a two-lane, two-way highway with a disabled vehicle more than two feet off the shoulder: the escort vehicles and OVERSIZE LOAD are parked off the road with triangles placed at 10-foot and repeated 100-foot spacings before and after the scene."
+  },
+  "page": "4-6"
+ },
+ {
+  "id": "e4-016",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "If a disabled rig or accident is blocking a lane of traffic, your call to 911 should also ask them to:",
+  "choices": [
+   "Notify NCDOT or the local municipality that operates the road",
+   "Dispatch a tow truck from your company's contract list",
+   "Send the nearest NCDOT permit officer to re-route the load",
+   "Broadcast a warning on local radio stations"
+  ],
+  "answer": 0,
+  "explanation": "Call 911 or the appropriate numbers as soon as possible, and if the rig or accident blocks a lane, tell them to notify NCDOT or the local municipality. Move the non-injured as far from the roadway as possible, use the STOP/SLOW paddle for traffic, and always have an escape route when flagging.",
+  "image": {
+   "src": "data/img/evo-lane-encroachment.png",
+   "alt": "Diagram of a two-lane, two-way highway where the disabled OVERSIZE LOAD encroaches on a lane: a two-flagger operation with flaggers at each end, triangles at 10-foot and 100-foot spacings, and a 200-foot gap marked ahead of the near flagger."
+  },
+  "page": "4-6"
+ },
+ {
+  "id": "e4-017",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "A breakdown blocks a lane of a multi-lane highway. Until NCDOT or the Highway Patrol arrives, you should:",
+  "choices": [
+   "Treat the setup as temporary, stay clear of the roadway, and not attempt repairs or towing",
+   "Begin repairs immediately, since clearing the lane quickly matters more than waiting for help",
+   "Tow the disabled vehicle to the shoulder with the escort vehicle before any triangles go out",
+   "Direct traffic personally from the middle of the open lane until the police take over the scene"
+  ],
+  "answer": 0,
+  "explanation": "Multi-lane roads usually mean higher speeds and volumes, so treat this as a temporary setup: call NCDOT or the municipality operating the road as soon as possible, do not attempt to repair or tow vehicles until more help arrives, stay clear of the roadway once the triangles are set, and keep the amber lights and emergency flashers on.",
+  "page": "4-7",
+  "image": {
+   "src": "data/img/evo-multilane-blocked.png",
+   "alt": "Multi-lane highway with one lane blocked off: the OVERSIZE LOAD and escort sit in the closed lane with triangles at 10-foot and repeated 100-foot spacings funneling traffic into the open lane."
+  }
+ },
+ {
+  "id": "e4-018",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "After an emergency stop on the highway, warning devices must be properly placed within:",
+  "choices": [
+   "10 minutes",
+   "5 minutes",
+   "15 minutes",
+   "30 minutes"
+  ],
+  "answer": 0,
+  "explanation": "If the load or escort must stop on the highway in an emergency, the vehicle warning signals go on immediately and stay on until the warning devices are placed — which must happen within ten minutes of stopping, as the FMC Safety Regulations require.",
+  "page": "4-8"
+ },
+ {
+  "id": "e4-019",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Under FMC Sec. 392.20, before a commercial motor vehicle is left unattended:",
+  "choices": [
+   "The parking brake must be securely set and all reasonable precautions taken against movement",
+   "The wheels must be chocked on both sides of every axle and the steering turned toward the shoulder",
+   "The engine must be shut off, the key removed, and the doors locked against unauthorized movement",
+   "A flagger must remain within sight of the vehicle until the driver returns from getting assistance"
+  ],
+  "answer": 0,
+  "explanation": "No commercial motor vehicle may be left unattended until the parking brake has been securely set and all reasonable precautions have been taken to prevent the vehicle's movement.",
+  "page": "4-9"
+ },
+ {
+  "id": "e4-020",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Under FMC Sec. 392.22, a commercial vehicle stopped on the traveled portion or shoulder of a highway must immediately:",
+  "choices": [
+   "Activate its hazard warning flashers and keep them on until the warning devices are placed",
+   "Place one reflective triangle at the driver's door before doing anything else at the scene",
+   "Sound its horn at regular intervals until every approaching driver has visibly slowed down",
+   "Turn on its headlights and spotlight and aim them at the rear of the trailer as a warning"
+  ],
+  "answer": 0,
+  "explanation": "For any stop other than a necessary traffic stop, the driver immediately activates the hazard warning flashers and keeps them flashing until the required warning devices are placed — and again while the devices are picked up before moving. Flashers may supplement the devices, but never replace them.",
+  "page": "4-9"
+ },
+ {
+  "id": "e4-021",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "The general FMC rule places the three warning devices for a stopped commercial vehicle at:",
+  "choices": [
+   "10 feet on the traffic side, and 100 feet in the center of the lane in each direction",
+   "25 feet behind, 50 feet ahead, and one on the roof of the cab facing the traffic",
+   "100 feet, 200 feet, and 300 feet, all behind the vehicle in the occupied lane",
+   "One at each end of the vehicle and one carried back to the nearest intersection"
+  ],
+  "answer": 0,
+  "explanation": "Within 10 minutes the driver places one device on the traffic side, 4 paces (about 10 feet) from the vehicle in the direction of approaching traffic; one at 40 paces (about 100 feet) in the center of the occupied lane or shoulder toward approaching traffic; and one at 40 paces in the direction away from approaching traffic.",
+  "page": "4-9"
+ },
+ {
+  "id": "e4-022",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "A driver equipped only with fusees or liquid-burning flares must:",
+  "choices": [
+   "Keep one burning at each prescribed location as long as the vehicle is stopped, and extinguish them before moving",
+   "Light one flare at the rear of the vehicle and carry the others in reserve in case the stop lasts more than an hour",
+   "Use them only during the hours of darkness, and substitute reflective triangles at the same spots during the day",
+   "Place them at twice the distances prescribed for triangles, since a burning flare is visible so much farther away"
+  ],
+  "answer": 0,
+  "explanation": "A lighted fusee or liquid-burning flare goes at each of the prescribed warning-device locations, with at least one burning at each location as long as the vehicle is stopped. Before the vehicle moves, the driver must extinguish and remove each one.",
+  "page": "4-10"
+ },
+ {
+  "id": "e4-023",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "A commercial vehicle stops within 500 feet of a curve or hill crest. The warning device on that side goes:",
+  "choices": [
+   "100 to 500 feet from the vehicle, in the direction of the obstructed view",
+   "At the very top of the hill or the apex of the curve, whichever is nearer",
+   "Exactly 100 feet from the vehicle, the same as on a straight stretch of road",
+   "On the opposite shoulder of the highway, facing back toward the curve"
+  ],
+  "answer": 0,
+  "explanation": "If the vehicle is stopped within 500 feet of a curve, hill crest, or other obstruction to view, the driver places the warning signal in the direction of the obstruction, 100 to 500 feet from the vehicle, to give ample warning to other highway users.",
+  "page": "4-10"
+ },
+ {
+  "id": "e4-024",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "On a divided or one-way highway, the three warning devices are placed toward approaching traffic at:",
+  "choices": [
+   "200 feet, 100 feet, and within 10 feet of the vehicle's rear",
+   "100 feet in each direction and 10 feet on the traffic side",
+   "300 feet, 200 feet, and 100 feet",
+   "50 feet, 100 feet, and 150 feet"
+  ],
+  "answer": 0,
+  "explanation": "On a divided or one-way highway all devices face approaching traffic: one at 200 feet and one at 100 feet in the center of the occupied lane or shoulder, and one at the traffic side within 10 feet of the rear of the vehicle.",
+  "page": "4-10"
+ },
+ {
+  "id": "e4-025",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Fuel is leaking from a vehicle stopped on the highway. Flame-producing signals may be:",
+  "choices": [
+   "Lighted only far enough away to prevent any fire or explosion",
+   "Used normally, since flares burn in a sealed casing",
+   "Placed downwind of the leak only",
+   "Used once the leak has slowed to a drip"
+  ],
+  "answer": 0,
+  "explanation": "If gasoline or any other flammable or combustible liquid or gas seeps or leaks from a stopped vehicle, no flame-producing emergency signal may be lighted or placed except at a distance that assures the prevention of a fire or explosion.",
+  "page": "4-10"
+ },
+ {
+  "id": "e4-026",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Under FMC Sec. 392.24, a lighted fusee or other flame-producing signal may be attached to a commercial motor vehicle:",
+  "choices": [
+   "Never",
+   "Only at the rear bumper",
+   "Only while the vehicle is parked",
+   "Only if the vehicle carries no cargo"
+  ],
+  "answer": 0,
+  "explanation": "No driver may attach — or let anyone else attach — a lighted fusee or other flame-producing emergency signal to any part of a commercial motor vehicle.",
+  "page": "4-11"
+ },
+ {
+  "id": "e4-027",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "Flame-producing signals are forbidden, and reflective triangles, red electric lanterns, or red reflectors required instead, when protecting a vehicle that:",
+  "choices": [
+   "Carries Division 1.1–1.3 explosives, is a cargo tank for Class 3 or Division 2.1 (even empty), or runs on compressed gas",
+   "Is stopped inside the business or residential district of a municipality during the hours lighted lamps are required",
+   "Is longer than 110 feet overall, wider than 12 feet, or heavier than 149,999 pounds gross",
+   "Has stopped within 500 feet of a curve, hill crest, or other obstruction to the view of approaching drivers"
+  ],
+  "answer": 0,
+  "explanation": "No flame-producing signal may protect a vehicle transporting Division 1.1, 1.2, or 1.3 explosives; any cargo tank used for Class 3 or Division 2.1 materials, loaded or empty; or any vehicle using compressed gas as motor fuel. Emergency reflective triangles, red electric lanterns, or red emergency reflectors are used instead, placed per Sec. 392.22(b).",
+  "page": "4-11"
+ },
+ {
+  "id": "e4-028",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "FMC Sec. 393.95 requires a commercial vehicle to carry, as emergency equipment:",
+  "choices": [
+   "Three bidirectional reflective triangles, or at least 6 fusees or 3 liquid-burning flares",
+   "Six bidirectional reflective triangles, or at least 3 fusees or 1 liquid-burning flare",
+   "Two reflective triangles and two liquid-burning flares, always carried together as a set",
+   "One reflective triangle for every 20 feet of vehicle length, rounded up to the next whole"
+  ],
+  "answer": 0,
+  "explanation": "The vehicle must carry three bidirectional emergency reflective triangles meeting FMVSS No. 125, or at least 6 fusees or 3 liquid-burning flares — plus as many additional fusees or flares as Sec. 392.22 requires. Other warning devices may be added, but never in place of the required ones.",
+  "page": "4-11"
+ },
+ {
+  "id": "e4-029",
+  "section": 4,
+  "sectionName": "Breakdowns and Emergencies",
+  "manual": "evo",
+  "question": "A single flagger may control a short, straight stretch of low-volume road by standing:",
+  "choices": [
+   "On the shoulder opposite the disabled load, visible to both directions of traffic",
+   "Beside the disabled load, where the blockage explains the stop",
+   "In the closed lane, midway between the two approaches",
+   "At whichever end of the stretch carries the heavier traffic"
+  ],
+  "answer": 0,
+  "explanation": "A single flagger is sometimes used when only a short, straight stretch of a low-volume road needs control. The flagger must be visible to both directions of traffic, and directs it with the STOP/SLOW paddle while standing on the shoulder opposite the disabled OS/OW load.",
+  "image": {
+   "src": "data/img/evo-single-flagger.png",
+   "alt": "Single-flagger operation: one flagger with a STOP paddle stands on the shoulder opposite the disabled load, visible to both directions, with a triangle set in the roadway."
+  },
+  "page": "4-5"
+ },
+ {
+  "id": "e5-001",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "In escort vehicle operation, \"risk\" is defined as the chance of:",
+  "choices": [
+   "Any injury, damage, or loss to property",
+   "A citation for a moving violation",
+   "Falling behind the permitted schedule",
+   "An equipment failure on the route"
+  ],
+  "answer": 0,
+  "explanation": "Risk is the chance of any injury, damage, or loss to property. The factors most often tied to escort incidents are driver inattention and fatigue, speeding, disregard of traffic control devices, impaired driving, unsafe movements and failure to yield, and vehicle safety violations.",
+  "page": "5-1"
+ },
+ {
+  "id": "e5-002",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "Which statement about risk during escort operations is true?",
+  "choices": [
+   "Risk is always present, and perceived risk differs from actual risk",
+   "Risk disappears once every operator on the team is certified",
+   "Risk belongs only to the load driver, never to the escort vehicles",
+   "Risk cannot be changed by anyone once the trip has started"
+  ],
+  "answer": 0,
+  "explanation": "Risk is always present during any escort driving task; perceived risk differs from actual risk; and risk can be shared and altered by one or more escort operators.",
+  "page": "5-1"
+ },
+ {
+  "id": "e5-003",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "The handbook lists four ways to reduce risk during escort operations: defensive driving, proper vehicle maintenance, proper training, and:",
+  "choices": [
+   "Communication among operators, transporters, law enforcement, and the Permit Unit",
+   "Carrying extra liability insurance on every escort vehicle involved in the movement",
+   "Limiting permitted moves to daylight hours during the summer months of the year",
+   "Doubling every following distance printed in the handbook whenever traffic is heavy"
+  ],
+  "answer": 0,
+  "explanation": "Risk is reduced by defensive and safe driving at all times, properly maintained escort vehicles, properly trained operators, and all operators communicating with each other, the load transporters, law enforcement personnel, and the NCDOT Oversize/Overweight Permit Unit.",
+  "page": "5-1"
+ },
+ {
+  "id": "e5-004",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "Safe seeing and scanning while escorting includes establishing a safe visual lead, compensating for driver and environmental factors, and:",
+  "choices": [
+   "Checking behind with a proper sequence of mirror and head checks",
+   "Fixing your eyes on the load at all times, since it is the hazard",
+   "Watching only the lane you are traveling in to avoid distraction",
+   "Leaving the checks at intersections to the driver of the load"
+  ],
+  "answer": 0,
+  "explanation": "Safe operation means a safe visual lead between vehicles, seeing and checking behind using a proper sequence of mirror and head checks, looking both ways at intersections until the path is clear of vehicles, trains, and pedestrians, and compensating for driver, vehicle, and environmental factors.",
+  "page": "5-2"
+ },
+ {
+  "id": "e5-005",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "Aggressive driving by another motorist should be read as:",
+  "choices": [
+   "A communication warning you of the risk their behavior creates",
+   "A request to be allowed to merge in ahead of the permitted load",
+   "A situation the escort should match so the convoy keeps its pace",
+   "A matter for the driver of the permitted load alone to handle"
+  ],
+  "answer": 0,
+  "explanation": "Road signs and traffic control devices communicate hazards; other operators communicate emergencies and hazards to each other; and aggressive driving by other operators communicates the risk of their behavior to you — a warning. Law enforcement and state laws likewise communicate the risk of unsafe operation.",
+  "page": "5-2"
+ },
+ {
+  "id": "e5-006",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "A posted speed limit means the maximum speed:",
+  "choices": [
+   "Under ideal conditions",
+   "For passenger cars only",
+   "Under any conditions short of ice",
+   "Averaged over the whole route"
+  ],
+  "answer": 0,
+  "explanation": "Speed limit means the maximum speed under ideal conditions. Accidents, visibility, traffic, and roadway and tire-traction limits all require adjusting speed — often well below the posted limit — to drive safely.",
+  "page": "5-2"
+ },
+ {
+  "id": "e5-007",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "The escort operator can best control the space in front of the vehicle by:",
+  "choices": [
+   "Using safe and prudent following distances",
+   "Running the amber lights at all times",
+   "Sounding the horn before closing on traffic",
+   "Holding the lane position closest to the center line"
+  ],
+  "answer": 0,
+  "explanation": "The margin of safety comes from following distance — the operator best controls the space ahead with safe, prudent following distances — plus correct lane positioning to minimize dangers on the sides, and safe passing margins. Defensive driving and safe following distances also reduce tailgating accidents.",
+  "page": "5-2"
+ },
+ {
+  "id": "e5-008",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "Besides proper steering and reduced speed, hydroplaning is best countered by:",
+  "choices": [
+   "Antilock braking systems (ABS)",
+   "Wider tires at lower pressure",
+   "Coasting in neutral through standing water",
+   "Pumping the brakes rapidly"
+  ],
+  "answer": 0,
+  "explanation": "Antilock braking systems help keep the vehicle from hydroplaning, together with proper steering and reduced speed. Skidding and accidents are best avoided by not hydroplaning and by proper braking, steering, and lower speeds — and operators should be able to change a tire and spot basic mechanical failures.",
+  "page": "5-3"
+ },
+ {
+  "id": "e5-009",
+  "section": 5,
+  "sectionName": "Defensive Driving",
+  "manual": "evo",
+  "question": "Regarding rest, emotions, and alcohol, an escort operator should:",
+  "choices": [
+   "Sleep properly before any task, watch for emotions that impair judgment, and never mix alcohol or drugs with driving",
+   "Rely on coffee, energy drinks, and short roadside naps to stay alert through long moves scheduled back to back",
+   "Set strong emotions aside by driving faster, since finishing the move early is the surest way to relieve stress",
+   "Treat a single drink with a meal as acceptable, as long as at least an hour passes before the escort resumes"
+  ],
+  "answer": 0,
+  "explanation": "Operators should have proper rest and sleep before operating any vehicle; emotions can impair safe operation and judgment; and consuming any alcohol or drugs is extremely dangerous before and during any vehicle or escort operation. Safety belts, with proper seat and head positioning, protect you and help prevent accidents.",
+  "page": "5-3"
  }
 ];

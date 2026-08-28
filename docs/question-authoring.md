@@ -117,3 +117,6 @@ material is dense.
 
 When the manual is revised, regenerate `data/manual-pages.js` with
 `tools/gen-manual-pages.js` and spot-check citations near the changed pages.
+The EVO handbook works the same way: its questions carry `manual: "evo"`,
+cite the handbook's own page labels, and resolve through `data/evo-pages.js`,
+regenerated with `tools/gen-evo-pages.js`.
