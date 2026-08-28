@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.4.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.3.0...v2.4.0) (2026-08-28)
+
+
+### Features
+
+* **engine:** let a config name the tests a fresh install starts on ([e54da6e](https://github.com/ullbergm/nc-cdl-trainer/commit/e54da6e184c5ea2bc85a8703e31e38c19cdfc77b))
+
+
+### Bug Fixes
+
+* sync trainer-engine v2.3.0 ([e54da6e](https://github.com/ullbergm/nc-cdl-trainer/commit/e54da6e184c5ea2bc85a8703e31e38c19cdfc77b))
+
 ## [2.3.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.2.0...v2.3.0) (2026-08-28)
 
 
