@@ -4,6 +4,8 @@
 const APP_ASSETS = [
   'data/manual-pages.js',
   'data/evo-pages.js',
+  'data/pretrip-script.js',
+  'js/pretrip-view.js',
   'data/img/placard-table-1.png',
   'data/img/placard-table-2.png',
   'data/img/evo-railroad-sign.png',

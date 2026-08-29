@@ -47,6 +47,11 @@ export and import for backups or for moving between devices.
   Brakes, Combination Vehicles, and the endorsement tests) and shows only the tests
   selected in Settings. Missed exam questions feed the Misses pool.
 - **Browse**: the whole bank by manual section, with each card's schedule and accuracy.
+- **Pre-trip**: the Section 11 vehicle-inspection script as a recite-and-reveal
+  checklist, in walk-around order. Read mode lays every check open; Memorize mode
+  hides them so you say each item's checks out loud, then tap to see how you did.
+  Toggle the groups your rig has (tractor coupling, trailer, school bus, coach),
+  and every group links to its page in the manual.
 - **Stats**: exam readiness, mastery counts, day streak, 7-day due forecast,
   per-section accuracy, and exam history.
 
