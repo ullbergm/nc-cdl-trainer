@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.4.0...v2.5.0) (2026-08-29)
+
+
+### Features
+
+* add Pre-trip tab with the Section 11 inspection script ([4797648](https://github.com/ullbergm/nc-cdl-trainer/commit/47976480ee0ded65a0c57a946cb1fc8a078d4ca4))
+
 ## [2.4.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.3.0...v2.4.0) (2026-08-28)
 
 
