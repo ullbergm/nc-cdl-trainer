@@ -89,3 +89,31 @@
   --track-marker: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><g fill="%23e8eae2"><rect x="0.5" y="4.5" width="10.5" height="8" rx="1"/><path d="M12 7.5 h2.7 l2.8 3 v2 h-5.5 z"/><circle cx="3.6" cy="14.2" r="1.9"/><circle cx="7.4" cy="14.2" r="1.9"/><circle cx="14.7" cy="14.2" r="1.9"/></g></svg>');
 }
 
+/* ---- Pre-trip script tab (js/pretrip-view.js) ---- */
+.ptbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 12px 0; }
+.ptmodes { display: flex; gap: 8px; }
+.ptrigs { display: flex; flex-wrap: wrap; gap: 6px 12px; }
+.ptrig {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--muted); font-size: 0.85rem; cursor: pointer;
+}
+.ptrig input { accent-color: var(--accent); }
+.ptgroup {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 10px 14px; margin: 10px 0; box-shadow: var(--shadow);
+}
+.ptgroup h3 {
+  display: flex; align-items: baseline; gap: 10px;
+  margin: 2px 0 6px; font-size: 1.05rem; letter-spacing: -0.01em;
+}
+.ptgroup h3 .cite { margin-left: auto; font-weight: 400; }
+.ptitem { border-top: 1px solid var(--border); padding: 7px 0; }
+.ptitem summary { cursor: pointer; font-weight: 600; }
+.ptitem ul { margin: 6px 0 4px; padding-left: 24px; }
+.ptitem li { margin: 3px 0; }
+.ptnote { color: var(--muted); font-size: 0.85rem; margin: 6px 0 2px; }
+.ptwarn {
+  border-left: 4px solid var(--warn); padding: 4px 10px; margin: 8px 0;
+  color: var(--warn); font-size: 0.9rem; font-weight: 600;
+}
+

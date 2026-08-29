@@ -3,7 +3,8 @@
 <head><meta charset="UTF-8"><title>Trainer tests</title></head>
 <body>
 <!-- Thin app-owned shell around the synced engine browser suite: this repo's
-     nav and script list, then tests/engine-suite.js drives the real app.
+     nav and script list, then tests/engine-suite.js drives the real app and
+     tests/app-suite.js adds the pre-trip script checks.
      Keep the nav in step with index.html; tests/validate-bank.js enforces it. -->
 <nav>
   <a href="#home" data-view="home" class="active">Home</a>
@@ -11,6 +12,7 @@
   <a href="#misses" data-view="misses">Misses</a>
   <a href="#exam" data-view="exam">Exam</a>
   <a href="#browse" data-view="browse">Browse</a>
+  <a href="#pretrip" data-view="pretrip">Pre-trip</a>
   <a href="#stats" data-view="stats">Stats</a>
   <a href="#settings" data-view="settings">Settings</a>
   <a href="#about" data-view="about">About</a>
@@ -20,13 +22,16 @@
 <script src="../data/questions.js"></script>
 <script src="../data/manual-pages.js"></script>
 <script src="../data/evo-pages.js"></script>
+<script src="../data/pretrip-script.js"></script>
 <script src="../data/exam-config.js"></script>
 <script src="plant-session.js"></script>
 <script src="../js/fsrs.js"></script>
 <script src="../js/readiness.js"></script>
 <script src="../js/storage.js"></script>
+<script src="../js/pretrip-view.js"></script>
 <script src="../js/app.js"></script>
 <script src="engine-suite.js"></script>
+<script src="app-suite.js"></script>
 <script>TestSuite.flush();</script>
 </body>
 </html>

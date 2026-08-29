@@ -31,6 +31,23 @@ export default [
     },
   },
   {
+    // The pre-trip script data defines the PRETRIP_SCRIPT global the Pre-trip
+    // tab renders.
+    files: ['data/pretrip-script.js'],
+    languageOptions: { sourceType: 'script', globals: { ...globals.browser } },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^PRETRIP_SCRIPT$' }],
+    },
+  },
+  {
+    // The Pre-trip tab registers itself on self.APP_VIEWS before app.js loads.
+    files: ['js/pretrip-view.js'],
+    languageOptions: {
+      sourceType: 'script',
+      globals: { ...globals.browser, PRETRIP_SCRIPT: 'readonly' },
+    },
+  },
+  {
     // The exam config loads after the data files and may read them all.
     files: ['data/exam-config.js'],
     languageOptions: {
@@ -123,6 +140,17 @@ export default [
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^TestSuite$' }],
+    },
+  },
+  {
+    // The app browser suite runs after the engine suite in tests/test.html.
+    files: ['tests/app-suite.js'],
+    languageOptions: {
+      sourceType: 'script',
+      globals: {
+        ...globals.browser,
+        TestSuite: 'readonly', PRETRIP_SCRIPT: 'readonly',
+      },
     },
   },
 ];
