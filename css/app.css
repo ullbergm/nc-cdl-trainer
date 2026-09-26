@@ -117,3 +117,121 @@
   color: var(--warn); font-size: 0.9rem; font-weight: 600;
 }
 
+
+/* ---- Shifting tab (js/shifting-view.js) ---- */
+.shbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 12px 0; }
+.shmodes { display: flex; gap: 8px; }
+.shsub { margin: 14px 0 8px; }
+.shifting code { font-size: 0.85em; }
+.shchart { margin: 12px 0; }
+.shchart summary { cursor: pointer; font-weight: 600; }
+.shchart table { width: auto; min-width: 260px; margin: 8px 0 4px; }
+.shchart th, .shchart td { text-align: left; padding: 5px 14px 5px 0; border-bottom: 1px solid var(--border); }
+.shchart th { color: var(--muted); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+.shchart td:first-child { font-weight: 700; font-variant-numeric: tabular-nums; }
+.shchart td:last-child { color: var(--warn); font-size: 0.85rem; font-weight: 600; }
+.shchart tr.shflip td { border-top: 2px solid var(--accent2); }
+.shtiles { grid-template-columns: repeat(3, minmax(90px, 1fr)); max-width: 420px; }
+.shq { margin-top: 10px; }
+.shq .actions { margin-top: 12px; }
+.shwait { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; color: var(--muted); font-size: 0.85rem; }
+.shwait input { width: 180px; accent-color: var(--accent); }
+.shwait output { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; min-width: 3em; }
+.shsound { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.85rem; cursor: pointer; }
+.shsound input { accent-color: var(--accent); }
+.shsteps { margin: 12px 0; padding-left: 26px; max-width: 48em; }
+.shstep { margin: 6px 0; padding: 6px 10px; border-radius: 8px; border: 1px solid transparent; transition: background 0.1s, border-color 0.1s; }
+.shstep.wait { color: var(--muted); font-style: italic; }
+.shwaitlen { display: inline-block; margin-left: 6px; font-style: normal; font-weight: 700; color: var(--accent); }
+.shstep.now { background: var(--ok-bg); border-color: var(--ok); color: var(--text); font-style: normal; }
+.shstep.now.pedal-in { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+.shlisten { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 8px 0; }
+.shlisten .hint:last-child { flex-basis: 100%; }
+.shtapbox { margin: 8px 0; }
+.shtapbtn {
+  font: inherit; font-weight: 800; font-size: 1.4rem;
+  width: 100%; max-width: 420px; min-height: 120px;
+  border-radius: 16px; border: 2px solid var(--accent);
+  background: var(--card); color: var(--text); cursor: pointer;
+  box-shadow: var(--shadow); touch-action: manipulation; user-select: none;
+  transition: transform 0.08s;
+}
+.shtapbtn:active { transform: scale(0.98); }
+.shtapbtn.armed { background: var(--accent); color: var(--accent-text); }
+.shresult { font-size: 1.1rem; margin: 10px 0 6px; }
+.shresult.ok { color: var(--ok); }
+.shresult.bad { color: var(--bad); }
+.shresult .hint { margin-left: 6px; }
+.shmeter {
+  position: relative; height: 14px; max-width: 420px; margin: 8px 0 22px;
+  border-radius: 7px; background: var(--border);
+}
+.shmeter .target { position: absolute; left: 50%; top: -4px; width: 2px; height: 22px; margin-left: -1px; background: var(--text); }
+.shmeter .mark { position: absolute; top: 1px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--bad); }
+.shmeter .mark.ok { background: var(--ok); }
+.shmeter em { position: absolute; top: 16px; color: var(--muted); font-size: 0.72rem; font-style: normal; text-transform: uppercase; letter-spacing: 0.08em; }
+.shmeter .early { left: 0; }
+.shmeter .late { right: 0; }
+.shreset { padding: 4px 10px; font-size: 0.8rem; margin-left: 8px; }
+.shmiss { margin-top: 18px; }
+.shrpmline { margin: 10px 0 4px; font-size: 0.9rem; color: var(--muted); }
+.shrpmline strong { color: var(--text); font-variant-numeric: tabular-nums; }
+.shtach { flex-basis: 100%; max-width: 420px; margin: 8px 0 4px; }
+.shdial { display: block; width: 100%; max-width: 260px; height: auto; }
+.shdial .face { fill: var(--card); stroke: var(--border); stroke-width: 2; }
+.shdial .track { fill: none; stroke: var(--border); stroke-width: 10; stroke-linecap: butt; }
+.shdial .drop { fill: none; stroke: var(--accent2); stroke-width: 10; }
+.shdial .band { fill: none; stroke: var(--ok); stroke-width: 10; }
+.shdial line { stroke: var(--text); }
+.shdial line.major { stroke-width: 2; }
+.shdial line.minor { stroke-width: 1; opacity: 0.6; }
+.shdial .label { fill: var(--text); font-size: 11px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; font-variant-numeric: tabular-nums; }
+.shdial .unit { fill: var(--muted); font-size: 8px; font-weight: 700; text-anchor: middle; text-transform: uppercase; letter-spacing: 0.08em; }
+.shdial #shneedle polygon { fill: var(--bad); }
+.shdial #shneedle .tail { opacity: 0.6; }
+.shdial #shneedle.ok polygon { fill: var(--ok); }
+.shdial .hub { fill: var(--text); }
+.shdial .readout { fill: var(--text); font-size: 22px; font-weight: 800; text-anchor: middle; font-variant-numeric: tabular-nums; }
+.shdial .readout.ok { fill: var(--ok); }
+.shchartpat { margin: 12px 0 4px; }
+.shpattern { display: block; width: 100%; max-width: 300px; height: auto; margin: 8px 0; }
+.shpattern .gate { stroke: var(--border); stroke-width: 14; stroke-linecap: round; }
+.shpattern .slot .pad { fill: var(--card); stroke: var(--border); stroke-width: 2; }
+.shpattern .slot[role="button"] { cursor: pointer; }
+.shpattern .slot[role="button"]:hover .pad, .shpattern .slot[role="button"]:focus-visible .pad { stroke: var(--accent); stroke-width: 3; }
+.shpattern .slot[role="button"]:focus { outline: none; }
+.shpattern .slot text { text-anchor: middle; dominant-baseline: central; font-weight: 800; fill: var(--muted); }
+.shpattern .slot .low { font-size: 15px; }
+.shpattern .slot .high { font-size: 12px; }
+.shpattern .slot text.on { fill: var(--text); }
+.shpattern .slot.correct .pad { fill: var(--ok-bg); stroke: var(--ok); stroke-width: 3; }
+.shpattern .slot.wrong .pad { fill: var(--bad-bg); stroke: var(--bad); stroke-width: 3; }
+.shpattern .knob { transition: transform 0.25s; pointer-events: none; }
+.shpattern .knob circle { fill: var(--text); stroke: var(--card); stroke-width: 3; }
+.shpattern .knob text { fill: var(--card); font-size: 9px; font-weight: 800; text-anchor: middle; dominant-baseline: central; }
+.shpattern.high .knob circle { fill: var(--accent2); }
+.shpattern.high .knob text { fill: var(--accent2-text); }
+.shrange { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0 4px; }
+.shdrive { margin: 8px 0; }
+.shdrivelay { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px 20px; align-items: start; justify-items: center; max-width: 760px; }
+.shdrivetach { width: 100%; max-width: 230px; }
+.shdrivetach .shdial { max-width: 230px; }
+.shstickbox { width: 100%; max-width: 300px; }
+.shpattern.drive { touch-action: none; cursor: grab; user-select: none; }
+.shpattern.drive .knob { transition: none; }
+.shpedals { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
+.shpedal {
+  font: inherit; font-weight: 800; font-size: 1.05rem; padding: 14px 18px; min-width: 110px;
+  border-radius: 12px; border: 2px solid var(--accent); background: var(--card); color: var(--text);
+  cursor: pointer; touch-action: none; user-select: none; box-shadow: var(--shadow);
+}
+.shpedal.down { background: var(--accent); color: var(--accent-text); }
+.shdrivestate { font-weight: 700; margin: 12px 0 2px; }
+.shdrivemsg { color: var(--muted); margin: 2px 0 8px; max-width: 48em; }
+.shlog { margin: 8px 0; padding-left: 22px; max-width: 48em; font-size: 0.9rem; }
+.shlog li { margin: 4px 0; }
+.shlog li.ok strong { color: var(--ok); }
+.shlog li.warn strong { color: var(--warn); }
+.shlog li.bad strong { color: var(--bad); }
+.shgrind { margin: 4px 0 8px; }
+.shgrind input { width: 150px; }
