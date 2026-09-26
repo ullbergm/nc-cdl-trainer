@@ -48,6 +48,22 @@ export default [
     },
   },
   {
+    // The shifting drill data defines the SHIFTING global the Shifting tab renders.
+    files: ['data/shifting.js'],
+    languageOptions: { sourceType: 'script', globals: { ...globals.browser } },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^SHIFTING$' }],
+    },
+  },
+  {
+    // The Shifting tab registers itself on self.APP_VIEWS before app.js loads.
+    files: ['js/shifting-view.js'],
+    languageOptions: {
+      sourceType: 'script',
+      globals: { ...globals.browser, SHIFTING: 'readonly' },
+    },
+  },
+  {
     // The exam config loads after the data files and may read them all.
     files: ['data/exam-config.js'],
     languageOptions: {
@@ -149,7 +165,8 @@ export default [
       sourceType: 'script',
       globals: {
         ...globals.browser,
-        TestSuite: 'readonly', PRETRIP_SCRIPT: 'readonly',
+        TestSuite: 'readonly', PRETRIP_SCRIPT: 'readonly', SHIFTING: 'readonly',
+        SHIFTING_DRIVE: 'readonly',
       },
     },
   },

@@ -52,11 +52,30 @@ export and import for backups or for moving between devices.
   hides them so you say each item's checks out loud, then tap to see how you did.
   Toggle the groups your rig has (tractor coupling, trailer, school bus, coach),
   and every group links to its page in the manual.
+- **Shifting**: two drills for the manual transmission on the road test. Gear
+  speeds asks which gear a road speed calls for, shifting up and down, and at what
+  speed each gear comes, from a gear table in `data/shifting.js` that you edit to
+  match your truck, along with its shift rpm and the rpm drop per gear. Shift
+  pattern draws the truck's lever pattern (an Eaton Fuller 10-speed H with a range
+  selector) and drills the move from one gear to the next, including the range flip
+  between 5th and 6th. Double clutch trains the pause between the two clutch presses: set the pause your
+  instructor teaches, Listen plays the manual's five-step cadence with a click per
+  pedal action and a tachometer needle falling through the drop, and Tap has you
+  press twice from memory and shows how early or late you were and where the
+  needle was when the gear went in. Drive is the whole shift by hand: hold Space
+  (or a pedal button) for the clutch, drag the stick on the H or use the arrow
+  keys, and run up through the gears on a tach and a speedometer, against engine
+  physics that only let a gear in when the needle is near what that gear wants.
+  The speed table is the truth about the gearing, so each gear comes in at its
+  listed speed. The Upshift and Downshift buttons pick the run: up from 4th to
+  10th on the gas, or down from 10th to 4th slowing, with a blip on the gas
+  before each lower gear.
 - **Stats**: exam readiness, mastery counts, day streak, 7-day due forecast,
   per-section accuracy, and exam history.
 
 On a keyboard, 1 through 4 pick an answer, Enter continues after a wrong answer,
-and 1/2/3 (or Enter for Good) grade a correct one. A stray tap is not final: an
+1/2/3 (or Enter for Good) grade a correct one, and Space is the clutch in the
+shifting drill. A stray tap is not final: an
 Undo button (or the U key) on the feedback screen takes back the answer and asks
 the question again, as long as you have not yet continued or graded. The buttons
 show badges for their shortcut keys on devices with a mouse and keyboard; on
@@ -147,6 +166,10 @@ js/app.js                UI and session logic
 data/questions.js        question bank (562 questions, tagged by section and manual page)
 data/manual-pages.js     manual page labels to PDF page numbers, for the citation links
 data/exam-config.js      what exam this is: tests, pass mark, manual links, exam-specific prose
+data/pretrip-script.js   the Section 11 inspection script the Pre-trip tab renders
+data/shifting.js         gear-to-speed table and double-clutch steps for the Shifting tab
+js/pretrip-view.js       the Pre-trip tab, an app-owned view registered on the engine
+js/shifting-view.js      the Shifting tab, likewise
 tools/                   regenerates that map from a local copy of the manual PDF, and the icons
 sw.js                    service worker (offline cache, only active on the hosted site)
 manifest.webmanifest     PWA manifest, lets the app be installed to a home screen
