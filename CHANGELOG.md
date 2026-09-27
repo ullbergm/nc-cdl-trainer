@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.6.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.5.0...v2.6.0) (2026-09-27)
+
+
+### Features
+
+* add Shifting tab with gear-speed, shift-pattern, and double-clutch drills ([4b95a48](https://github.com/ullbergm/nc-cdl-trainer/commit/4b95a4888a1fff9d0d3b84c9d9854e3fc3e1b279))
+
+
+### Bug Fixes
+
+* **engine:** let Dependabot bumps merge on their own once CI passes ([03635eb](https://github.com/ullbergm/nc-cdl-trainer/commit/03635eb80778522fca29db34332a5c4f25f6d2af))
+* sync trainer-engine v2.3.1 ([03635eb](https://github.com/ullbergm/nc-cdl-trainer/commit/03635eb80778522fca29db34332a5c4f25f6d2af))
+
 ## [2.5.0](https://github.com/ullbergm/nc-cdl-trainer/compare/v2.4.0...v2.5.0) (2026-08-29)
 
 
